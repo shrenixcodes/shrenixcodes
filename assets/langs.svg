@@ -18,36 +18,36 @@
 <line x1="34" y1="36" x2="73.6" y2="36" stroke="url(#chrome)" stroke-width=".9"/><line x1="366.4" y1="36" x2="406" y2="36" stroke="url(#chrome)" stroke-width=".9"/>
 <path class="rp" d="M81.6,29 Q81.6,36 86.64,36 Q81.6,36 81.6,43 Q81.6,36 76.55999999999999,36 Q81.6,36 81.6,29Z" fill="#ff2a2a" filter="url(#glow)"/><path class="rp" d="M358.4,29 Q358.4,36 363.44,36 Q358.4,36 358.4,43 Q358.4,36 353.35999999999996,36 Q358.4,36 358.4,29Z" fill="#ff2a2a" filter="url(#glow)"/>
 <text x="220.0" y="41" font-size="13.5" fill="url(#chrome)" text-anchor="middle" letter-spacing="5" font-weight="bold">S P E L L B O O K</text>
-<rect class="sb" x="36.0" y="62" width="249.2" height="9" fill="url(#barb)" style="animation-delay:0.20s"/><rect class="sb" x="287.2" y="62" width="76.3" height="9" fill="url(#barc)" style="animation-delay:0.32s"/><rect class="sb" x="365.6" y="62" width="26.8" height="9" fill="#6699ff" style="animation-delay:0.44s"/><rect class="sb" x="394.3" y="62" width="2.1" height="9" fill="url(#barc)" style="animation-delay:0.56s"/><rect class="sb" x="398.4" y="62" width="1.0" height="9" fill="#6699ff" style="animation-delay:0.68s"/><rect class="sb" x="401.2" y="62" width="1.0" height="9" fill="url(#barc)" style="animation-delay:0.80s"/><g class="in" style="animation-delay:0.30s">
+<rect class="sb" x="36.0" y="62" width="243.3" height="9" fill="url(#barb)" style="animation-delay:0.20s"/><rect class="sb" x="281.3" y="62" width="64.9" height="9" fill="url(#barc)" style="animation-delay:0.32s"/><rect class="sb" x="348.2" y="62" width="20.3" height="9" fill="#6699ff" style="animation-delay:0.44s"/><rect class="sb" x="370.5" y="62" width="9.2" height="9" fill="url(#barc)" style="animation-delay:0.56s"/><rect class="sb" x="381.7" y="62" width="9.2" height="9" fill="#6699ff" style="animation-delay:0.68s"/><rect class="sb" x="392.8" y="62" width="9.2" height="9" fill="url(#barc)" style="animation-delay:0.80s"/><g class="in" style="animation-delay:0.30s">
 <path class="" d="M40,95 Q40,100 43.6,100 Q40,100 40,105 Q40,100 36.4,100 Q40,100 40,95Z" fill="#ff2a2a" />
 <text x="52" y="104" font-size="12.5" fill="#f2f4fa">Python</text>
-<text x="210" y="104" font-size="11.5" fill="#b8c2dc" text-anchor="end">67.9%</text>
+<text x="210" y="104" font-size="11.5" fill="#b8c2dc" text-anchor="end">66.7%</text>
 <rect x="52" y="111" width="158" height="3" fill="#15161f"/>
 <rect class="lb" x="52" y="111" width="158.0" height="3" fill="url(#barb)" style="animation-delay:0.40s"/></g><g class="in" style="animation-delay:0.40s">
 <path class="" d="M230,95 Q230,100 233.6,100 Q230,100 230,105 Q230,100 226.4,100 Q230,100 230,95Z" fill="#6699ff" />
-<text x="242" y="104" font-size="12.5" fill="#f2f4fa">C++</text>
-<text x="400" y="104" font-size="11.5" fill="#b8c2dc" text-anchor="end">21.2%</text>
+<text x="242" y="104" font-size="12.5" fill="#f2f4fa">TypeScript</text>
+<text x="400" y="104" font-size="11.5" fill="#b8c2dc" text-anchor="end">18.2%</text>
 <rect x="242" y="111" width="158" height="3" fill="#15161f"/>
-<rect class="lb" x="242" y="111" width="49.3" height="3" fill="#b8c2dc" style="animation-delay:0.50s"/></g><g class="in" style="animation-delay:0.50s">
+<rect class="lb" x="242" y="111" width="43.1" height="3" fill="#b8c2dc" style="animation-delay:0.50s"/></g><g class="in" style="animation-delay:0.50s">
 <path class="" d="M40,129 Q40,134 43.6,134 Q40,134 40,139 Q40,134 36.4,134 Q40,134 40,129Z" fill="#6699ff" />
-<text x="52" y="138" font-size="12.5" fill="#f2f4fa">NASL</text>
-<text x="210" y="138" font-size="11.5" fill="#b8c2dc" text-anchor="end">7.8%</text>
+<text x="52" y="138" font-size="12.5" fill="#f2f4fa">Java</text>
+<text x="210" y="138" font-size="11.5" fill="#b8c2dc" text-anchor="end">6.1%</text>
 <rect x="52" y="145" width="158" height="3" fill="#15161f"/>
-<rect class="lb" x="52" y="145" width="18.1" height="3" fill="#b8c2dc" style="animation-delay:0.60s"/></g><g class="in" style="animation-delay:0.60s">
+<rect class="lb" x="52" y="145" width="14.4" height="3" fill="#b8c2dc" style="animation-delay:0.60s"/></g><g class="in" style="animation-delay:0.60s">
 <path class="" d="M230,129 Q230,134 233.6,134 Q230,134 230,139 Q230,134 226.4,134 Q230,134 230,129Z" fill="#6699ff" />
-<text x="242" y="138" font-size="12.5" fill="#f2f4fa">Cython</text>
-<text x="400" y="138" font-size="11.5" fill="#b8c2dc" text-anchor="end">1.1%</text>
+<text x="242" y="138" font-size="12.5" fill="#f2f4fa">Lua</text>
+<text x="400" y="138" font-size="11.5" fill="#b8c2dc" text-anchor="end">3.0%</text>
 <rect x="242" y="145" width="158" height="3" fill="#15161f"/>
-<rect class="lb" x="242" y="145" width="2.6" height="3" fill="#b8c2dc" style="animation-delay:0.70s"/></g><g class="in" style="animation-delay:0.70s">
+<rect class="lb" x="242" y="145" width="7.2" height="3" fill="#b8c2dc" style="animation-delay:0.70s"/></g><g class="in" style="animation-delay:0.70s">
 <path class="" d="M40,163 Q40,168 43.6,168 Q40,168 40,173 Q40,168 36.4,168 Q40,168 40,163Z" fill="#6699ff" />
-<text x="52" y="172" font-size="12.5" fill="#f2f4fa">C</text>
-<text x="210" y="172" font-size="11.5" fill="#b8c2dc" text-anchor="end">0.8%</text>
+<text x="52" y="172" font-size="12.5" fill="#f2f4fa">Rust</text>
+<text x="210" y="172" font-size="11.5" fill="#b8c2dc" text-anchor="end">3.0%</text>
 <rect x="52" y="179" width="158" height="3" fill="#15161f"/>
-<rect class="lb" x="52" y="179" width="1.8" height="3" fill="#b8c2dc" style="animation-delay:0.80s"/></g><g class="in" style="animation-delay:0.80s">
+<rect class="lb" x="52" y="179" width="7.2" height="3" fill="#b8c2dc" style="animation-delay:0.80s"/></g><g class="in" style="animation-delay:0.80s">
 <path class="" d="M230,163 Q230,168 233.6,168 Q230,168 230,173 Q230,168 226.4,168 Q230,168 230,163Z" fill="#6699ff" />
-<text x="242" y="172" font-size="12.5" fill="#f2f4fa">Jupyter Notebook</text>
-<text x="400" y="172" font-size="11.5" fill="#b8c2dc" text-anchor="end">0.7%</text>
+<text x="242" y="172" font-size="12.5" fill="#f2f4fa">JavaScript</text>
+<text x="400" y="172" font-size="11.5" fill="#b8c2dc" text-anchor="end">3.0%</text>
 <rect x="242" y="179" width="158" height="3" fill="#15161f"/>
-<rect class="lb" x="242" y="179" width="1.7" height="3" fill="#b8c2dc" style="animation-delay:0.90s"/></g>
+<rect class="lb" x="242" y="179" width="7.2" height="3" fill="#b8c2dc" style="animation-delay:0.90s"/></g>
 <rect width="440" height="220" rx="12" filter="url(#gr)" opacity=".06"/>
 </svg>
