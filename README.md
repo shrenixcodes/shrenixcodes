@@ -13,13 +13,15 @@
 
 **˚₊‧꒰ა hi, i'm shreyan ໒꒱ ‧₊˚**
 
-i build things for the web, teach computers to see,
-and occasionally break game servers on purpose.
+b.tech cse **(ai & ml)** student at **srm ist, chennai** 🌸
+i build ai systems, full-stack apps and android apps,
+and i care a lot about how things *feel* to use.
 
-- 🌸 full-stack apps with **react + typescript** on **fastapi / node**
-- 👁️ computer vision: faces, eyes, voices, vibes
-- 🦀 cozy little terminal tools in **rust**
-- 🎮 fivem scripts & minecraft plugins in my free time
+- 🧠 **llms & ai:** fine-tuning, rag, agentic workflows (ex-junior ai intern @ blockrank)
+- 👁️ **computer vision:** visual voice activity detection, facial emotion recognition
+- 🌐 **full-stack:** react + typescript on fastapi / node
+- 📱 **android:** kotlin + jetpack compose, with a custom "liquid glass" ui
+- 🎮 **side quests:** fivem scripts, minecraft plugins, rust terminal tools
 
 <sub>(｡•̀ᴗ-)✧ currently: shipping side projects way past bedtime</sub>
 
@@ -33,15 +35,19 @@ and occasionally break game servers on purpose.
 
 <br/><br/>
 
+<img src="assets/questlog.svg" width="100%" alt="quest log: experience and certifications" />
+
+<br/><br/>
+
 **⟪ ✦ i n v e n t o r y ✦ ⟫**
 
-<img src="https://skillicons.dev/icons?i=py,ts,js,rust,java,kotlin,lua,react,nextjs,vite,tailwind,threejs&perline=12" />
+<img src="https://skillicons.dev/icons?i=py,java,c,cpp,kotlin,ts,js,rust,lua,react,nextjs,tailwind,threejs,androidstudio&perline=14" />
 <br/>
-<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,prisma,postgres,sqlite,pytorch,tensorflow,sklearn,opencv,docker,git&perline=12" />
+<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,prisma,postgres,pytorch,tensorflow,sklearn,opencv,gcp,electron,docker,git,linux&perline=14" />
 
 <img src="assets/divider.svg" width="100%" />
 
-**⟪ ✦ q u e s t &nbsp; l o g ✦ ⟫**
+**⟪ ✦ s t a t i s t i c s ✦ ⟫**
 
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=shrenixcodes&show_icons=true&hide_border=true&bg_color=0d0b10&title_color=ff7eb9&icon_color=c9a7ff&text_color=e8e2cf&ring_color=ff7eb9&count_private=true&custom_title=%E2%9C%BF%20shrenix%27s%20stats%20%E2%9C%BF" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrenixcodes&layout=compact&hide_border=true&bg_color=0d0b10&title_color=ff7eb9&text_color=e8e2cf&langs_count=8&custom_title=%E2%9C%BF%20spellbook%20%E2%9C%BF" />
@@ -57,8 +63,8 @@ and occasionally break game servers on purpose.
 <br/><br/>
 
 <a href="https://github.com/shrenixcodes"><img src="https://img.shields.io/badge/github-shrenixcodes-ff7eb9?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0b10" /></a>
-<!-- add more links here, e.g.
-<a href="https://linkedin.com/in/YOUR-HANDLE"><img src="https://img.shields.io/badge/linkedin-connect-c9a7ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0b10" /></a>
+<a href="https://linkedin.com/in/shreyan-bag-a81328351"><img src="https://img.shields.io/badge/linkedin-connect-c9a7ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0b10" /></a>
+<!-- uncomment to show your email:
 <a href="mailto:YOUR-EMAIL"><img src="https://img.shields.io/badge/email-say%20hi-7fe3ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0b10" /></a>
 -->
 <img src="https://komarev.com/ghpvc/?username=shrenixcodes&label=visitors&color=ff7eb9&style=for-the-badge&labelColor=0d0b10" />
