@@ -68,12 +68,12 @@ i care a lot about how things *look* and *feel*, which is why my css has trust i
 
 <sub>numbers that prove i should touch grass more often</sub>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=shrenixcodes&show_icons=true&hide_border=true&bg_color=050507&title_color=6699ff&icon_color=99ccff&text_color=f2f4fa&ring_color=2424d9&count_private=true&custom_title=%E2%9C%A6%20shrenix%27s%20stats%20%E2%9C%A6" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrenixcodes&layout=compact&hide_border=true&bg_color=050507&title_color=6699ff&text_color=f2f4fa&langs_count=8&custom_title=%E2%9C%A6%20spellbook%20%E2%9C%A6" />
+<img src="assets/stats.svg" width="49%" alt="stats" />
+<img src="assets/langs.svg" width="49%" alt="top languages" />
 
 <img src="https://streak-stats.demolab.com?user=shrenixcodes&hide_border=true&background=050507&ring=2424d9&fire=ff2a2a&currStreakLabel=6699ff&sideLabels=99ccff&currStreakNum=f2f4fa&sideNums=f2f4fa&dates=5c6175&stroke=1c1e2a" />
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=shrenixcodes&bg_color=050507&color=f2f4fa&line=6699ff&point=ff2a2a&area=true&area_color=2424d9&hide_border=true&custom_title=%E2%9C%A6%20daily%20grind%20%E2%9C%A6" />
+<img src="assets/activity.svg" width="100%" alt="contribution activity, last 31 days" />
 
 <img src="assets/divider.svg" width="100%" />
 
