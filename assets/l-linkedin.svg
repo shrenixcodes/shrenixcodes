@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="40" viewBox="0 0 168 40">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace}</style>
+<path d="M1,10 V1 H10 M158,1 H167 V10 M167,30 V39 H158 M10,39 H1 V30" fill="none" stroke="#b8c2dc" stroke-width="1"/>
+<rect x="5" y="5" width="3" height="3" fill="#99ccff"/>
+<text x="84.0" y="25" font-size="13" fill="#f2f4fa" text-anchor="middle" letter-spacing="2">linkedin <tspan fill="#99ccff">↗</tspan></text></svg>

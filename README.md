@@ -15,7 +15,7 @@
 </td>
 <td width="55%">
 
-**✦ ── hi, i'm shreyan ── ✦**
+<img src="assets/t-hello.svg" width="100%" alt="hi, i'm shreyan" />
 
 b.tech cse **(ai & ml)** student. i teach computers to think
 so i don't have to.
@@ -34,9 +34,7 @@ i care a lot about how things *look* and *feel*, which is why my css has trust i
 </tr>
 </table>
 
-**✦ ── s k i l l &nbsp; t r e e ── ✦**
-
-<sub>things i've googled enough times to call myself proficient</sub>
+<img src="assets/t-skills.svg" width="100%" alt="skill tree" />
 
 <table>
 <tr><td><b>† languages</b></td><td>python · java · c · c++ · kotlin · typescript · javascript · rust · lua · sql · html · css</td></tr>
@@ -64,9 +62,7 @@ i care a lot about how things *look* and *feel*, which is why my css has trust i
 
 <img src="assets/divider.svg" width="100%" />
 
-**✦ ── s t a t i s t i c s ── ✦**
-
-<sub>numbers that prove i should touch grass more often</sub>
+<img src="assets/t-stats.svg" width="100%" alt="statistics" />
 
 <img src="assets/stats.svg" width="49%" alt="stats" />
 <img src="assets/langs.svg" width="49%" alt="top languages" />
@@ -77,16 +73,13 @@ i care a lot about how things *look* and *feel*, which is why my css has trust i
 
 <img src="assets/divider.svg" width="100%" />
 
-<sub><i>「 it's not a bug, it's a side quest. 」</i></sub><br/>
-<sub><i>「 code is never finished. it just stops crashing long enough to push. 」</i></sub><br/>
-<sub><i>「 it works on my machine. we are not shipping my machine. 」</i></sub>
+<img src="assets/quote.svg" width="100%" alt="it's not a bug, it's a side quest" />
 
-<br/><br/>
+<br/>
 
-<a href="https://github.com/shrenixcodes"><img src="https://img.shields.io/badge/github-shrenixcodes-2424d9?style=for-the-badge&logo=github&logoColor=white&labelColor=050507" /></a>
-<a href="https://linkedin.com/in/shreyan-bag-a81328351"><img src="https://img.shields.io/badge/linkedin-connect-6699ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=050507" /></a>
-<a href="mailto:subhoberh2004@gmail.com"><img src="https://img.shields.io/badge/email-say%20hi-ff2a2a?style=for-the-badge&logo=gmail&logoColor=white&labelColor=050507" /></a>
-<img src="https://komarev.com/ghpvc/?username=shrenixcodes&label=visitors&color=2424d9&style=for-the-badge" />
+<a href="https://github.com/shrenixcodes"><img src="assets/l-github.svg" height="40" alt="github" /></a>&nbsp;&nbsp;
+<a href="https://linkedin.com/in/shreyan-bag-a81328351"><img src="assets/l-linkedin.svg" height="40" alt="linkedin" /></a>&nbsp;&nbsp;
+<a href="mailto:subhoberh2004@gmail.com"><img src="assets/l-email.svg" height="40" alt="email" /></a>
 
 <br/><br/>
 
