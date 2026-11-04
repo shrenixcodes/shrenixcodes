@@ -1,58 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="526" viewBox="0 0 900 526">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="532" viewBox="0 0 900 532">
 <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace}
-.ln{opacity:0;animation:in .4s ease-out both}
+.scan{animation:roll 1s linear infinite}@keyframes roll{from{transform:translateY(0)}to{transform:translateY(4px)}}
+.cur{animation:blink .9s steps(1) infinite}@keyframes blink{50%{opacity:0}}.ln{opacity:0;animation:in .4s ease-out both}
 @keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
-.pop{opacity:0;animation:pop .35s ease-out both}
-@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.cur{animation:blink .9s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-.scan{animation:roll 1s linear infinite}
-@keyframes roll{from{transform:translateY(0)}to{transform:translateY(4px)}}</style>
-<rect width="900" height="526" rx="14" fill="#0d0b10"/>
-<rect x="14" y="14" width="872" height="498" rx="8" fill="none" stroke="#8a8477" stroke-dasharray="2 5"/>
-<clipPath id="qc"><rect width="900" height="526" rx="14"/></clipPath>
-<g clip-path="url(#qc)"><text x="22" y="30" font-size="18" fill="#ff7eb9" text-anchor="middle">✿</text><text x="878" y="30" font-size="18" fill="#ff7eb9" text-anchor="middle">✿</text><text x="22" y="514" font-size="18" fill="#ff7eb9" text-anchor="middle">✿</text><text x="878" y="514" font-size="18" fill="#ff7eb9" text-anchor="middle">✿</text><text x="450.0" y="46" font-size="16" fill="#ff7eb9" text-anchor="middle" letter-spacing="6" font-weight="bold">⟪ Q U E S T   L O G ⟫</text><g class="ln" style="animation-delay:0.30s">
-<text x="48" y="82" font-size="12" fill="#ff7eb9" font-weight="bold">[CLEARED]</text>
-<text x="140" y="82" font-size="15" fill="#e8e2cf" font-weight="bold">Junior AI Intern</text>
-<text x="298" y="82" font-size="14" fill="#8a8477">@ BlockRank</text>
-<text x="852" y="82" font-size="12" fill="#8a8477" text-anchor="end">jul–oct 2026</text>
-<text x="140" y="102" font-size="12.5" fill="#8a8477">↳ fine-tuned &amp; deployed LLMs, built RAG systems, AI APIs &amp; agentic workflows</text></g><g class="ln" style="animation-delay:0.52s">
-<text x="48" y="132" font-size="12" fill="#ff7eb9" font-weight="bold">[CLEARED]</text>
-<text x="140" y="132" font-size="15" fill="#e8e2cf" font-weight="bold">AI/ML Intern</text>
-<text x="262" y="132" font-size="14" fill="#8a8477">@ Labmentix</text>
-<text x="852" y="132" font-size="12" fill="#8a8477" text-anchor="end">jul–sep 2026</text>
-<text x="140" y="152" font-size="12.5" fill="#8a8477">↳ EDA → models: vaccination, tourism, EMI, facial emotion, flipkart analytics</text></g><g class="ln" style="animation-delay:0.74s">
-<text x="48" y="182" font-size="12" fill="#ff7eb9" font-weight="bold">[CLEARED]</text>
-<text x="140" y="182" font-size="15" fill="#e8e2cf" font-weight="bold">Data Science Intern</text>
-<text x="325" y="182" font-size="14" fill="#8a8477">@ Yuva Intern · Henry Harvin</text>
-<text x="852" y="182" font-size="12" fill="#8a8477" text-anchor="end">jul–sep 2026</text>
-<text x="140" y="202" font-size="12.5" fill="#8a8477">↳ full DS lifecycle + an end-to-end capstone</text></g><g class="ln" style="animation-delay:0.96s">
-<text x="48" y="232" font-size="12" fill="#ff7eb9" font-weight="bold">[CLEARED]</text>
-<text x="140" y="232" font-size="15" fill="#e8e2cf" font-weight="bold">Robotics &amp; Controls Sim</text>
-<text x="361" y="232" font-size="14" fill="#8a8477">@ Johnson &amp; Johnson MedTech</text>
-<text x="852" y="232" font-size="12" fill="#8a8477" text-anchor="end">jun 2026</text>
-<text x="140" y="252" font-size="12.5" fill="#8a8477">↳ debugged control-system delays with python tooling</text></g><g class="ln" style="animation-delay:1.18s">
-<text x="48" y="282" font-size="12" fill="#ff7eb9" font-weight="bold">[CLEARED]</text>
-<text x="140" y="282" font-size="15" fill="#e8e2cf" font-weight="bold">AI Research Intern</text>
-<text x="316" y="282" font-size="14" fill="#8a8477">@ Agnirva Space Community</text>
-<text x="852" y="282" font-size="12" fill="#8a8477" text-anchor="end">feb–apr 2025</text>
-<text x="140" y="302" font-size="12.5" fill="#8a8477">↳ AI for space exploration &amp; satellite systems report</text></g><g class="ln" style="animation-delay:1.40s">
-<text x="48" y="332" font-size="12" fill="#c9a7ff" font-weight="bold">[ONGOING]</text>
-<text x="140" y="332" font-size="15" fill="#e8e2cf" font-weight="bold">B.Tech CSE (AI &amp; ML)</text>
-<text x="334" y="332" font-size="14" fill="#8a8477">@ SRM IST, Chennai</text>
-<text x="852" y="332" font-size="12" fill="#8a8477" text-anchor="end">2023 – now</text>
-<text x="140" y="352" font-size="12.5" fill="#8a8477">↳ main storyline ✦ in progress</text></g><text class="cur" x="367" y="352" font-size="12.5" fill="#c9a7ff"> ▌</text><g class="ln" style="animation-delay:1.62s"><text x="48" y="388" font-size="14" fill="#8a8477" xml:space="preserve">── ✦ achievements unlocked ──────────────────────────────────────────────────</text></g><g class="pop" style="animation-delay:1.14s"><rect x="48" y="401" width="152" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="60" y="418" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> JPMorgan SWE Sim</text></g><g class="pop" style="animation-delay:1.26s"><rect x="210.4" y="401" width="263" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="222.4" y="418" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> Google · Applying AI Principles</text></g><g class="pop" style="animation-delay:1.38s"><rect x="483.79999999999995" y="401" width="197" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="495.79999999999995" y="418" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> Google · Generative AI</text></g><g class="pop" style="animation-delay:1.50s"><rect x="48" y="437" width="204" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="60" y="454" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> Vertex AI Prompt Design</text></g><g class="pop" style="animation-delay:1.62s"><rect x="262.20000000000005" y="437" width="204" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="274.20000000000005" y="454" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> Deloitte Data Analytics</text></g><g class="pop" style="animation-delay:1.74s"><rect x="476.4000000000001" y="437" width="182" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="488.4000000000001" y="454" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> Tata GenAI Analytics</text></g><g class="pop" style="animation-delay:1.86s"><rect x="48" y="473" width="212" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="60" y="490" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> Mercor · Intro to Agents</text></g><g class="pop" style="animation-delay:1.98s"><rect x="269.6" y="473" width="212" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="281.6" y="490" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> NPTEL ML · IIT Kharagpur</text></g><g class="pop" style="animation-delay:2.10s"><rect x="491.20000000000005" y="473" width="152" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="503.20000000000005" y="490" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> Cisco Networking</text></g><g class="pop" style="animation-delay:2.22s"><rect x="653.6" y="473" width="145" height="25" rx="12" fill="#1a1522" stroke="#8a8477" stroke-opacity=".6"/>
-<text x="665.6" y="490" font-size="12.3" fill="#e8e2cf"><tspan fill="#ff7eb9">★</tspan> C &amp; C++ (Udemy)</text></g><defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-<rect width="4" height="1" fill="#ffffff" opacity="0.045"/></pattern>
-<radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.6"/></radialGradient></defs>
-<rect width="900" height="526" fill="url(#scan)" class="scan"/>
-<rect width="900" height="526" fill="url(#vig)"/></g></svg>
+.pop{opacity:0;animation:pop .35s ease-out both}@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}</style><defs><linearGradient id="chrome" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="320" y2="112" spreadMethod="reflect">
+<stop offset="0" stop-color="#3b3f63"/><stop offset=".35" stop-color="#f6f8ff"/><stop offset=".5" stop-color="#8fa6ff"/>
+<stop offset=".7" stop-color="#ffffff"/><stop offset="1" stop-color="#4b55a8"/>
+<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="640 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="barc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#9aa0aa"/><stop offset=".55" stop-color="#6c717a"/><stop offset="1" stop-color="#d7dbe1"/></linearGradient>
+<linearGradient id="barr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#99ccff"/><stop offset=".5" stop-color="#2424d9"/><stop offset="1" stop-color="#14148a"/></linearGradient>
+<linearGradient id="barh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a8a"/><stop offset=".5" stop-color="#ff2a2a"/><stop offset="1" stop-color="#8a0d0d"/></linearGradient>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="900" height="532" rx="12" fill="#050507"/>
+<rect x="12" y="12" width="876" height="508" rx="4" fill="none" stroke="#5c6175" stroke-opacity=".5" stroke-width=".8"/>
+<clipPath id="qc"><rect width="900" height="532" rx="12"/></clipPath>
+<g clip-path="url(#qc)"><ellipse cx="435.0" cy="279.0" rx="474" ry="83" fill="none" stroke="#6699ff" stroke-opacity=".45" stroke-width=".8"  transform="rotate(9 450.0 266.0)"/><ellipse cx="489.0" cy="261.0" rx="322" ry="233" fill="none" stroke="#6699ff" stroke-opacity=".45" stroke-width=".8" stroke-dasharray="2 5" transform="rotate(0 450.0 266.0)"/><path class="" d="M110,402 Q110,462 153.2,462 Q110,462 110,522 Q110,462 66.80000000000001,462 Q110,462 110,402Z" fill="#2424d9"  opacity=".18"/><g transform="translate(20,20) scale(1,1)"><path d="M0.0,1.7 Q23.0,3.5 46.0,0.0 Q23.0,1.1 0.0,-1.7Z" fill="url(#chrome)"/><path d="M-1.7,0.0 Q1.1,23.0 0.0,46.0 Q3.5,23.0 1.7,-0.0Z" fill="url(#chrome)"/><path d="M-1.1,1.1 Q7.0,8.5 15.6,15.6 Q8.5,7.0 1.1,-1.1Z" fill="url(#chrome)"/><path d="M13.1,0.5 Q15.4,6.1 20.0,10.4 Q16.6,5.4 14.9,-0.5Z" fill="url(#chrome)"/><path d="M-0.5,14.9 Q5.4,16.6 10.4,20.0 Q6.1,15.4 0.5,13.1Z" fill="url(#chrome)"/></g><g transform="translate(880,20) scale(-1,1)"><path d="M0.0,1.7 Q23.0,3.5 46.0,0.0 Q23.0,1.1 0.0,-1.7Z" fill="url(#chrome)"/><path d="M-1.7,0.0 Q1.1,23.0 0.0,46.0 Q3.5,23.0 1.7,-0.0Z" fill="url(#chrome)"/><path d="M-1.1,1.1 Q7.0,8.5 15.6,15.6 Q8.5,7.0 1.1,-1.1Z" fill="url(#chrome)"/><path d="M13.1,0.5 Q15.4,6.1 20.0,10.4 Q16.6,5.4 14.9,-0.5Z" fill="url(#chrome)"/><path d="M-0.5,14.9 Q5.4,16.6 10.4,20.0 Q6.1,15.4 0.5,13.1Z" fill="url(#chrome)"/></g><g transform="translate(20,512) scale(1,-1)"><path d="M0.0,1.7 Q23.0,3.5 46.0,0.0 Q23.0,1.1 0.0,-1.7Z" fill="url(#chrome)"/><path d="M-1.7,0.0 Q1.1,23.0 0.0,46.0 Q3.5,23.0 1.7,-0.0Z" fill="url(#chrome)"/><path d="M-1.1,1.1 Q7.0,8.5 15.6,15.6 Q8.5,7.0 1.1,-1.1Z" fill="url(#chrome)"/><path d="M13.1,0.5 Q15.4,6.1 20.0,10.4 Q16.6,5.4 14.9,-0.5Z" fill="url(#chrome)"/><path d="M-0.5,14.9 Q5.4,16.6 10.4,20.0 Q6.1,15.4 0.5,13.1Z" fill="url(#chrome)"/></g><g transform="translate(880,512) scale(-1,-1)"><path d="M0.0,1.7 Q23.0,3.5 46.0,0.0 Q23.0,1.1 0.0,-1.7Z" fill="url(#chrome)"/><path d="M-1.7,0.0 Q1.1,23.0 0.0,46.0 Q3.5,23.0 1.7,-0.0Z" fill="url(#chrome)"/><path d="M-1.1,1.1 Q7.0,8.5 15.6,15.6 Q8.5,7.0 1.1,-1.1Z" fill="url(#chrome)"/><path d="M13.1,0.5 Q15.4,6.1 20.0,10.4 Q16.6,5.4 14.9,-0.5Z" fill="url(#chrome)"/><path d="M-0.5,14.9 Q5.4,16.6 10.4,20.0 Q6.1,15.4 0.5,13.1Z" fill="url(#chrome)"/></g><g class="" ><path d="M290.8,41.4 Q215.8,35.9 140.8,43.0 Q215.8,38.1 290.8,44.6Z" fill="url(#chrome)"/><path d="M609.2,44.6 Q684.2,38.1 759.2,43.0 Q684.2,35.9 609.2,41.4Z" fill="url(#chrome)"/><path d="M291.2,42.0 Q273.6,31.7 253.2,29.3 Q273.1,33.1 290.4,44.0Z" fill="url(#chrome)"/><path d="M609.6,44.0 Q626.9,33.1 646.8,29.3 Q626.4,31.7 608.8,42.0Z" fill="url(#chrome)"/></g><path class="" d="M302.8,34 Q302.8,43 309.28000000000003,43 Q302.8,43 302.8,52 Q302.8,43 296.32,43 Q302.8,43 302.8,34Z" fill="#ff2a2a" filter="url(#glow)" /><path class="" d="M597.2,34 Q597.2,43 603.6800000000001,43 Q597.2,43 597.2,52 Q597.2,43 590.72,43 Q597.2,43 597.2,34Z" fill="#ff2a2a" filter="url(#glow)" /><text x="450.0" y="48" font-size="15" fill="url(#chrome)" text-anchor="middle" letter-spacing="6" font-weight="bold">Q U E S T   L O G</text><g class="ln" style="animation-delay:0.30s">
+<text x="48" y="86" font-size="12" fill="#6699ff" font-weight="bold">[CLEARED]</text>
+<text x="140" y="86" font-size="15" fill="#f2f4fa" font-weight="bold">Junior AI Intern</text>
+<text x="298" y="86" font-size="14" fill="#5c6175">@ BlockRank</text>
+<text x="852" y="86" font-size="12" fill="#5c6175" text-anchor="end">jul–oct 2026</text>
+<text x="140" y="106" font-size="12.5" fill="#5c6175">↳ fine-tuned &amp; deployed LLMs, built RAG systems, AI APIs &amp; agentic workflows</text></g><g class="ln" style="animation-delay:0.52s">
+<text x="48" y="136" font-size="12" fill="#6699ff" font-weight="bold">[CLEARED]</text>
+<text x="140" y="136" font-size="15" fill="#f2f4fa" font-weight="bold">AI/ML Intern</text>
+<text x="262" y="136" font-size="14" fill="#5c6175">@ Labmentix</text>
+<text x="852" y="136" font-size="12" fill="#5c6175" text-anchor="end">jul–sep 2026</text>
+<text x="140" y="156" font-size="12.5" fill="#5c6175">↳ EDA → models: vaccination, tourism, EMI, facial emotion, flipkart analytics</text></g><g class="ln" style="animation-delay:0.74s">
+<text x="48" y="186" font-size="12" fill="#6699ff" font-weight="bold">[CLEARED]</text>
+<text x="140" y="186" font-size="15" fill="#f2f4fa" font-weight="bold">Data Science Intern</text>
+<text x="325" y="186" font-size="14" fill="#5c6175">@ Yuva Intern · Henry Harvin</text>
+<text x="852" y="186" font-size="12" fill="#5c6175" text-anchor="end">jul–sep 2026</text>
+<text x="140" y="206" font-size="12.5" fill="#5c6175">↳ full DS lifecycle + an end-to-end capstone</text></g><g class="ln" style="animation-delay:0.96s">
+<text x="48" y="236" font-size="12" fill="#6699ff" font-weight="bold">[CLEARED]</text>
+<text x="140" y="236" font-size="15" fill="#f2f4fa" font-weight="bold">Robotics &amp; Controls Sim</text>
+<text x="361" y="236" font-size="14" fill="#5c6175">@ Johnson &amp; Johnson MedTech</text>
+<text x="852" y="236" font-size="12" fill="#5c6175" text-anchor="end">jun 2026</text>
+<text x="140" y="256" font-size="12.5" fill="#5c6175">↳ debugged control-system delays with python tooling</text></g><g class="ln" style="animation-delay:1.18s">
+<text x="48" y="286" font-size="12" fill="#6699ff" font-weight="bold">[CLEARED]</text>
+<text x="140" y="286" font-size="15" fill="#f2f4fa" font-weight="bold">AI Research Intern</text>
+<text x="316" y="286" font-size="14" fill="#5c6175">@ Agnirva Space Community</text>
+<text x="852" y="286" font-size="12" fill="#5c6175" text-anchor="end">feb–apr 2025</text>
+<text x="140" y="306" font-size="12.5" fill="#5c6175">↳ AI for space exploration &amp; satellite systems report</text></g><g class="ln" style="animation-delay:1.40s">
+<text x="48" y="336" font-size="12" fill="#ff2a2a" font-weight="bold">[ONGOING]</text>
+<text x="140" y="336" font-size="15" fill="#f2f4fa" font-weight="bold">B.Tech CSE (AI &amp; ML)</text>
+<text x="334" y="336" font-size="14" fill="#5c6175">@ SRM IST, Chennai</text>
+<text x="852" y="336" font-size="12" fill="#5c6175" text-anchor="end">2023 – now</text>
+<text x="140" y="356" font-size="12.5" fill="#5c6175">↳ main storyline † in progress</text></g><text class="cur" x="367" y="356" font-size="12.5" fill="#ff2a2a">▌</text><g class="ln" style="animation-delay:1.62s"><text x="48" y="392" font-size="14" fill="#5c6175" xml:space="preserve">── † achievements unlocked ──────────────────────────────────────────────────</text></g><g class="pop" style="animation-delay:1.14s"><path d="M56,405 h136 l8,12.5 l-8,12.5 h-136 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="62" y="422" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> JPMorgan SWE Sim</text></g><g class="pop" style="animation-delay:1.26s"><path d="M218.4,405 h247 l8,12.5 l-8,12.5 h-247 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="224.4" y="422" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> Google · Applying AI Principles</text></g><g class="pop" style="animation-delay:1.38s"><path d="M491.79999999999995,405 h181 l8,12.5 l-8,12.5 h-181 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="497.79999999999995" y="422" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> Google · Generative AI</text></g><g class="pop" style="animation-delay:1.50s"><path d="M56,441 h188 l8,12.5 l-8,12.5 h-188 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="62" y="458" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> Vertex AI Prompt Design</text></g><g class="pop" style="animation-delay:1.62s"><path d="M270.20000000000005,441 h188 l8,12.5 l-8,12.5 h-188 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="276.20000000000005" y="458" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> Deloitte Data Analytics</text></g><g class="pop" style="animation-delay:1.74s"><path d="M484.4000000000001,441 h166 l8,12.5 l-8,12.5 h-166 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="490.4000000000001" y="458" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> Tata GenAI Analytics</text></g><g class="pop" style="animation-delay:1.86s"><path d="M56,477 h196 l8,12.5 l-8,12.5 h-196 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="62" y="494" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> Mercor · Intro to Agents</text></g><g class="pop" style="animation-delay:1.98s"><path d="M277.6,477 h196 l8,12.5 l-8,12.5 h-196 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="283.6" y="494" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> NPTEL ML · IIT Kharagpur</text></g><g class="pop" style="animation-delay:2.10s"><path d="M499.20000000000005,477 h136 l8,12.5 l-8,12.5 h-136 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="505.20000000000005" y="494" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> Cisco Networking</text></g><g class="pop" style="animation-delay:2.22s"><path d="M661.6,477 h129 l8,12.5 l-8,12.5 h-129 l-8,-12.5z" fill="#0f1013" stroke="url(#chrome)" stroke-width=".8"/>
+<text x="667.6" y="494" font-size="12.3" fill="#f2f4fa"><tspan fill="#6699ff">✦</tspan> C &amp; C++ (Udemy)</text></g><defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity="0.035"/></pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="72%"><stop offset="55%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.75"/></radialGradient></defs>
+<rect width="900" height="532" fill="url(#scan)" class="scan"/><rect width="900" height="532" fill="url(#vig)"/></g></svg>
