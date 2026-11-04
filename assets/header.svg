@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace}
+.petal{animation:fall linear infinite;opacity:.75}
+@keyframes fall{0%{transform:translate(0,0) rotate(0)}25%{transform:translate(14px,90px) rotate(90deg)}50%{transform:translate(-8px,180px) rotate(180deg)}75%{transform:translate(12px,270px) rotate(270deg)}100%{transform:translate(0,370px) rotate(360deg)}}
+.g1{animation:j1 3.2s steps(1) infinite;opacity:.8}
+.g2{animation:j2 3.2s steps(1) infinite;opacity:.8}
+@keyframes j1{0%,8%,14%,62%,68%,100%{transform:translate(0,0)}9%{transform:translate(-4px,1px)}11%{transform:translate(3px,-2px)}63%{transform:translate(-6px,0)}65%{transform:translate(2px,1px)}}
+@keyframes j2{0%,8%,14%,62%,68%,100%{transform:translate(0,0)}9%{transform:translate(4px,-1px)}11%{transform:translate(-3px,2px)}63%{transform:translate(6px,0)}65%{transform:translate(-2px,-1px)}}
+.main{animation:flick 3.2s steps(1) infinite}
+@keyframes flick{0%,9%,12%,63%,66%,100%{opacity:1}10%,64%{opacity:.35}}
+.slice{animation:slice 3.2s steps(1) infinite}
+@keyframes slice{0%,9%,13%,63%,67%,100%{transform:translate(0,0);opacity:0}10%{transform:translate(18px,0);opacity:1}12%{transform:translate(-12px,0);opacity:1}64%{transform:translate(-20px,0);opacity:1}66%{transform:translate(10px,0);opacity:1}}
+.type{animation:type 3s steps(55) .6s both}
+@keyframes type{from{width:0}to{width:495px}}
+.cur{animation:move 3s steps(55) .6s both,blink .8s steps(1) infinite}
+@keyframes move{from{transform:translateX(0)}to{transform:translateX(495px)}}
+@keyframes blink{50%{opacity:0}}
+.lace{animation:drift 30s linear infinite}
+.lace2{animation:drift 30s linear infinite reverse}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-171.6px)}}
+.scan{animation:roll 1s linear infinite}
+@keyframes roll{from{transform:translateY(0)}to{transform:translateY(4px)}}
+.sp{animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+</style>
+<rect width="900" height="320" rx="14" fill="#0d0b10"/>
+<clipPath id="hc"><rect width="900" height="320" rx="14"/></clipPath>
+<g clip-path="url(#hc)">
+<text class="petal" x="341" y="-20" font-size="18" fill="#ff7eb9" style="animation-duration:13.6s;animation-delay:-5.5s">✿</text><text class="petal" x="106" y="-20" font-size="10" fill="#c9a7ff" style="animation-duration:9.6s;animation-delay:-0.8s">✦</text><text class="petal" x="98" y="-20" font-size="10" fill="#ff7eb9" style="animation-duration:10.0s;animation-delay:-1.0s">✿</text><text class="petal" x="856" y="-20" font-size="16" fill="#ff7eb9" style="animation-duration:11.0s;animation-delay:-13.3s">˚</text><text class="petal" x="60" y="-20" font-size="14" fill="#c9a7ff" style="animation-duration:13.8s;animation-delay:-0.7s">♡</text><text class="petal" x="439" y="-20" font-size="11" fill="#c9a7ff" style="animation-duration:8.0s;animation-delay:-1.6s">*</text><text class="petal" x="605" y="-20" font-size="10" fill="#ff7eb9" style="animation-duration:11.0s;animation-delay:-2.6s">✿</text><text class="petal" x="643" y="-20" font-size="17" fill="#e8e2cf" style="animation-duration:8.4s;animation-delay:-9.5s">·</text><text class="petal" x="609" y="-20" font-size="13" fill="#c9a7ff" style="animation-duration:13.5s;animation-delay:-5.1s">❀</text><text class="petal" x="93" y="-20" font-size="14" fill="#ff7eb9" style="animation-duration:11.0s;animation-delay:-7.4s">*</text><text class="petal" x="633" y="-20" font-size="15" fill="#c9a7ff" style="animation-duration:13.9s;animation-delay:-1.7s">·</text><text class="petal" x="165" y="-20" font-size="18" fill="#ff7eb9" style="animation-duration:13.5s;animation-delay:-5.9s">˚</text><text class="petal" x="596" y="-20" font-size="17" fill="#e8e2cf" style="animation-duration:12.5s;animation-delay:-11.5s">*</text><text class="petal" x="603" y="-20" font-size="17" fill="#e8e2cf" style="animation-duration:12.6s;animation-delay:-1.0s">✿</text><text class="petal" x="723" y="-20" font-size="17" fill="#e8e2cf" style="animation-duration:11.6s;animation-delay:-0.8s">˚</text><text class="petal" x="301" y="-20" font-size="17" fill="#ff7eb9" style="animation-duration:12.0s;animation-delay:-12.4s">*</text><text class="petal" x="373" y="-20" font-size="14" fill="#c9a7ff" style="animation-duration:8.2s;animation-delay:-1.6s">✿</text><text class="petal" x="142" y="-20" font-size="11" fill="#ff7eb9" style="animation-duration:12.2s;animation-delay:-5.6s">♡</text><text class="petal" x="180" y="-20" font-size="18" fill="#ff7eb9" style="animation-duration:10.1s;animation-delay:-7.7s">❀</text><text class="petal" x="295" y="-20" font-size="13" fill="#ff7eb9" style="animation-duration:11.9s;animation-delay:-13.8s">˚</text><text class="petal" x="164" y="-20" font-size="10" fill="#c9a7ff" style="animation-duration:7.6s;animation-delay:-2.1s">˚</text><text class="petal" x="506" y="-20" font-size="12" fill="#ff7eb9" style="animation-duration:12.8s;animation-delay:-2.6s">*</text>
+<g class="lace"><text x="0" y="30" font-size="13" fill="#8a8477" xml:space="preserve">·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.</text></g>
+<g class="lace2"><text x="-200" y="302" font-size="13" fill="#8a8477" xml:space="preserve">·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.·:*¨¨*:·.✿.·:*¨¨*:·.✧.</text></g>
+<text x="450.0" y="60" font-size="12" fill="#8a8477" text-anchor="middle" letter-spacing="3">— ✧ welcome to my corner of the internet ✧ —</text>
+<g class="g1"><text x="211.5" y="92" font-size="15" fill="#7fe3ff"  xml:space="preserve">███████╗██╗  ██╗██████╗ ███████╗███╗   ██╗██╗██╗  ██╗</text>
+<text x="211.5" y="109" font-size="15" fill="#7fe3ff"  xml:space="preserve">██╔════╝██║  ██║██╔══██╗██╔════╝████╗  ██║██║╚██╗██╔╝</text>
+<text x="211.5" y="126" font-size="15" fill="#7fe3ff"  xml:space="preserve">███████╗███████║██████╔╝█████╗  ██╔██╗ ██║██║ ╚███╔╝ </text>
+<text x="211.5" y="143" font-size="15" fill="#7fe3ff"  xml:space="preserve">╚════██║██╔══██║██╔══██╗██╔══╝  ██║╚██╗██║██║ ██╔██╗ </text>
+<text x="211.5" y="160" font-size="15" fill="#7fe3ff"  xml:space="preserve">███████║██║  ██║██║  ██║███████╗██║ ╚████║██║██╔╝ ██╗</text>
+<text x="211.5" y="177" font-size="15" fill="#7fe3ff"  xml:space="preserve">╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝</text>
+<text x="211.5" y="194" font-size="15" fill="#7fe3ff"  xml:space="preserve">                                                     </text></g>
+<g class="g2"><text x="211.5" y="92" font-size="15" fill="#ff7eb9"  xml:space="preserve">███████╗██╗  ██╗██████╗ ███████╗███╗   ██╗██╗██╗  ██╗</text>
+<text x="211.5" y="109" font-size="15" fill="#ff7eb9"  xml:space="preserve">██╔════╝██║  ██║██╔══██╗██╔════╝████╗  ██║██║╚██╗██╔╝</text>
+<text x="211.5" y="126" font-size="15" fill="#ff7eb9"  xml:space="preserve">███████╗███████║██████╔╝█████╗  ██╔██╗ ██║██║ ╚███╔╝ </text>
+<text x="211.5" y="143" font-size="15" fill="#ff7eb9"  xml:space="preserve">╚════██║██╔══██║██╔══██╗██╔══╝  ██║╚██╗██║██║ ██╔██╗ </text>
+<text x="211.5" y="160" font-size="15" fill="#ff7eb9"  xml:space="preserve">███████║██║  ██║██║  ██║███████╗██║ ╚████║██║██╔╝ ██╗</text>
+<text x="211.5" y="177" font-size="15" fill="#ff7eb9"  xml:space="preserve">╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝</text>
+<text x="211.5" y="194" font-size="15" fill="#ff7eb9"  xml:space="preserve">                                                     </text></g>
+<g class="main"><text x="211.5" y="92" font-size="15" fill="#e8e2cf"  xml:space="preserve">███████╗██╗  ██╗██████╗ ███████╗███╗   ██╗██╗██╗  ██╗</text>
+<text x="211.5" y="109" font-size="15" fill="#e8e2cf"  xml:space="preserve">██╔════╝██║  ██║██╔══██╗██╔════╝████╗  ██║██║╚██╗██╔╝</text>
+<text x="211.5" y="126" font-size="15" fill="#e8e2cf"  xml:space="preserve">███████╗███████║██████╔╝█████╗  ██╔██╗ ██║██║ ╚███╔╝ </text>
+<text x="211.5" y="143" font-size="15" fill="#e8e2cf"  xml:space="preserve">╚════██║██╔══██║██╔══██╗██╔══╝  ██║╚██╗██║██║ ██╔██╗ </text>
+<text x="211.5" y="160" font-size="15" fill="#e8e2cf"  xml:space="preserve">███████║██║  ██║██║  ██║███████╗██║ ╚████║██║██╔╝ ██╗</text>
+<text x="211.5" y="177" font-size="15" fill="#e8e2cf"  xml:space="preserve">╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝</text>
+<text x="211.5" y="194" font-size="15" fill="#e8e2cf"  xml:space="preserve">                                                     </text></g>
+<clipPath id="sl"><rect x="0" y="110" width="900" height="16"/></clipPath>
+<g clip-path="url(#sl)"><g class="slice"><text x="211.5" y="92" font-size="15" fill="#ff7eb9"  xml:space="preserve">███████╗██╗  ██╗██████╗ ███████╗███╗   ██╗██╗██╗  ██╗</text>
+<text x="211.5" y="109" font-size="15" fill="#ff7eb9"  xml:space="preserve">██╔════╝██║  ██║██╔══██╗██╔════╝████╗  ██║██║╚██╗██╔╝</text>
+<text x="211.5" y="126" font-size="15" fill="#ff7eb9"  xml:space="preserve">███████╗███████║██████╔╝█████╗  ██╔██╗ ██║██║ ╚███╔╝ </text>
+<text x="211.5" y="143" font-size="15" fill="#ff7eb9"  xml:space="preserve">╚════██║██╔══██║██╔══██╗██╔══╝  ██║╚██╗██║██║ ██╔██╗ </text>
+<text x="211.5" y="160" font-size="15" fill="#ff7eb9"  xml:space="preserve">███████║██║  ██║██║  ██║███████╗██║ ╚████║██║██╔╝ ██╗</text>
+<text x="211.5" y="177" font-size="15" fill="#ff7eb9"  xml:space="preserve">╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝</text>
+<text x="211.5" y="194" font-size="15" fill="#ff7eb9"  xml:space="preserve">                                                     </text></g></g>
+<text class="sp" x="95" y="110" font-size="16" fill="#ff7eb9" style="animation-delay:0s">✦</text><text class="sp" x="800" y="95" font-size="16" fill="#c9a7ff" style="animation-delay:0.8s">✦</text><text class="sp" x="130" y="205" font-size="16" fill="#c9a7ff" style="animation-delay:1.6s">✦</text><text class="sp" x="770" y="210" font-size="16" fill="#ff7eb9" style="animation-delay:0.4s">✦</text><text class="sp" x="60" y="160" font-size="16" fill="#e8e2cf" style="animation-delay:1.2s">✦</text><text class="sp" x="845" y="160" font-size="16" fill="#e8e2cf" style="animation-delay:2s">✦</text>
+<clipPath id="tc"><rect class="type" x="202" y="202" height="30" width="0"/></clipPath>
+<text x="202" y="224" font-size="15" fill="#e8e2cf" clip-path="url(#tc)" xml:space="preserve">( shreyan bag ✦ full-stack dev ✦ ml tinkerer ✦ modder )</text>
+<rect class="cur" x="204" y="210" width="9" height="18" fill="#ff7eb9"/>
+<defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+<rect width="4" height="1" fill="#ffffff" opacity="0.045"/></pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="70%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.6"/></radialGradient></defs>
+<rect width="900" height="320" fill="url(#scan)" class="scan"/>
+<rect width="900" height="320" fill="url(#vig)"/>
+</g>
+</svg>
