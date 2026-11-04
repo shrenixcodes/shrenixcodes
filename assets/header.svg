@@ -16,21 +16,382 @@
 .mv{animation:move 2.6s steps(41) .5s both}@keyframes move{from{transform:translateX(0)}to{transform:translateX(320px)}}
 .rp{animation:rp 2.2s ease-in-out infinite}@keyframes rp{0%,100%{opacity:.45}50%{opacity:1}}
 .spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-.tw{animation:rp 2.6s ease-in-out infinite}</style><defs><linearGradient id="chrome" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="320" y2="112" spreadMethod="reflect">
+.tw{animation:rp 2.6s ease-in-out infinite}.sfl{opacity:0;animation:sfl 1.8s step-end infinite}@keyframes sfl{0%{opacity:1}8.333%{opacity:0}100%{opacity:0}}.sfr{opacity:0;animation:sfr 1.8s step-end infinite}@keyframes sfr{0%{opacity:1}8.333%{opacity:0}100%{opacity:0}}.fl{animation:fl 3.2s ease-in-out infinite}@keyframes fl{0%,100%{transform:scale(.85);opacity:.8}50%{transform:scale(1.08);opacity:1}}
+.flr{animation:flr 12s linear infinite}@keyframes flr{to{transform:rotate(360deg)}}</style><defs><linearGradient id="chrome" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="320" y2="112" spreadMethod="reflect">
 <stop offset="0" stop-color="#3b3f63"/><stop offset=".35" stop-color="#f6f8ff"/><stop offset=".5" stop-color="#8fa6ff"/>
 <stop offset=".7" stop-color="#ffffff"/><stop offset="1" stop-color="#4b55a8"/>
 <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="640 0" dur="7s" repeatCount="indefinite"/></linearGradient>
 <linearGradient id="barc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#9aa0aa"/><stop offset=".55" stop-color="#6c717a"/><stop offset="1" stop-color="#d7dbe1"/></linearGradient>
 <linearGradient id="barr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#99ccff"/><stop offset=".5" stop-color="#2424d9"/><stop offset="1" stop-color="#14148a"/></linearGradient>
 <linearGradient id="barh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a8a"/><stop offset=".5" stop-color="#ff2a2a"/><stop offset="1" stop-color="#8a0d0d"/></linearGradient>
-<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><radialGradient id="egl" gradientUnits="userSpaceOnUse" cx="124.125" cy="102.25" r="82"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#99ccff"/><stop offset=".8" stop-color="#6699ff"/><stop offset="1" stop-color="#2424d9"/></radialGradient><radialGradient id="egr" gradientUnits="userSpaceOnUse" cx="775.875" cy="102.25" r="82"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#99ccff"/><stop offset=".8" stop-color="#6699ff"/><stop offset="1" stop-color="#2424d9"/></radialGradient></defs>
 <rect width="900" height="210" rx="12" fill="#050507"/>
 <clipPath id="hc"><rect width="900" height="210" rx="12"/></clipPath>
 <g clip-path="url(#hc)">
 <path class="em" d="M473,213.87512777848093 Q473,220 477.4099079994937,220 Q473,220 473,226.12487222151907 Q473,220 468.5900920005063,220 Q473,220 473,213.87512777848093Z" fill="#b8c2dc"  style="animation-duration:11.2s;animation-delay:-10.3s"/><path class="em" d="M530,213.7843987491158 Q530,220 534.4752329006366,220 Q530,220 530,226.2156012508842 Q530,220 525.5247670993634,220 Q530,220 530,213.7843987491158Z" fill="#b8c2dc"  style="animation-duration:11.1s;animation-delay:-2.3s"/><path class="em" d="M654,215.21362738897201 Q654,220 657.4461882799402,220 Q654,220 654,224.78637261102799 Q654,220 650.5538117200598,220 Q654,220 654,215.21362738897201Z" fill="#99ccff"  style="animation-duration:9.7s;animation-delay:-2.2s"/><path class="em" d="M102,214.4621888684666 Q102,220 105.98722401470404,220 Q102,220 102,225.5378111315334 Q102,220 98.01277598529596,220 Q102,220 102,214.4621888684666Z" fill="#b8c2dc"  style="animation-duration:9.2s;animation-delay:-10.7s"/><path class="em" d="M473,216.37002361943934 Q473,220 475.61358299400365,220 Q473,220 473,223.62997638056066 Q473,220 470.38641700599635,220 Q473,220 473,216.37002361943934Z" fill="#f2f4fa"  style="animation-duration:9.9s;animation-delay:-7.4s"/><path class="em" d="M861,216.23916694880828 Q861,220 863.707799796858,220 Q861,220 861,223.76083305119172 Q861,220 858.292200203142,220 Q861,220 861,216.23916694880828Z" fill="#99ccff"  style="animation-duration:9.2s;animation-delay:-0.7s"/><path class="em" d="M624,215.23787553337337 Q624,220 627.4287296159712,220 Q624,220 624,224.76212446662663 Q624,220 620.5712703840288,220 Q624,220 624,215.23787553337337Z" fill="#99ccff"  style="animation-duration:6.2s;animation-delay:-5.6s"/><path class="em" d="M541,216.9816249113545 Q541,220 543.1732300638248,220 Q541,220 541,223.0183750886455 Q541,220 538.8267699361752,220 Q541,220 541,216.9816249113545Z" fill="#f2f4fa"  style="animation-duration:7.4s;animation-delay:-3.5s"/><path class="em" d="M478,214.7949290574881 Q478,220 481.74765107860856,220 Q478,220 478,225.2050709425119 Q478,220 474.25234892139144,220 Q478,220 478,214.7949290574881Z" fill="#f2f4fa"  style="animation-duration:9.9s;animation-delay:-4.9s"/><path class="em" d="M734,214.94846143457175 Q734,220 737.6371077671083,220 Q734,220 734,225.05153856542825 Q734,220 730.3628922328917,220 Q734,220 734,214.94846143457175Z" fill="#f2f4fa"  style="animation-duration:7.5s;animation-delay:-9.1s"/><path class="em" d="M81,216.56878757934024 Q81,220 83.47047294287503,220 Q81,220 81,223.43121242065976 Q81,220 78.52952705712497,220 Q81,220 81,216.56878757934024Z" fill="#6699ff"  style="animation-duration:9.4s;animation-delay:-1.3s"/><path class="em" d="M405,214.2604101002054 Q405,220 409.1325047278521,220 Q405,220 405,225.7395898997946 Q405,220 400.8674952721479,220 Q405,220 405,214.2604101002054Z" fill="#99ccff"  style="animation-duration:6.4s;animation-delay:-0.2s"/><path class="em" d="M224,215.49814716040018 Q224,220 227.24133404451186,220 Q224,220 224,224.50185283959982 Q224,220 220.75866595548814,220 Q224,220 224,215.49814716040018Z" fill="#b8c2dc"  style="animation-duration:11.6s;animation-delay:-0.6s"/><path class="em" d="M439,213.88595656529338 Q439,220 443.40211127298875,220 Q439,220 439,226.11404343470662 Q439,220 434.59788872701125,220 Q439,220 439,213.88595656529338Z" fill="#6699ff"  style="animation-duration:6.4s;animation-delay:-7.6s"/><path class="em" d="M354,213.14369513362493 Q354,220 358.93653950379,220 Q354,220 354,226.85630486637507 Q354,220 349.06346049621,220 Q354,220 354,213.14369513362493Z" fill="#f2f4fa"  style="animation-duration:6.5s;animation-delay:-4.0s"/><path class="em" d="M147,216.7604263882357 Q147,220 149.3324930004703,220 Q147,220 147,223.2395736117643 Q147,220 144.6675069995297,220 Q147,220 147,216.7604263882357Z" fill="#b8c2dc"  style="animation-duration:7.5s;animation-delay:-1.2s"/><path class="em" d="M191,214.96453824071037 Q191,220 194.62553246668853,220 Q191,220 191,225.03546175928963 Q191,220 187.37446753331147,220 Q191,220 191,214.96453824071037Z" fill="#99ccff"  style="animation-duration:10.1s;animation-delay:-2.3s"/><path class="em" d="M439,215.31697753101432 Q439,220 442.3717761776697,220 Q439,220 439,224.68302246898568 Q439,220 435.6282238223303,220 Q439,220 439,215.31697753101432Z" fill="#99ccff"  style="animation-duration:9.9s;animation-delay:-1.4s"/>
 <ellipse cx="482.0" cy="110.0" rx="375" ry="56" fill="none" stroke="#6699ff" stroke-opacity=".45" stroke-width=".8"  transform="rotate(-11 450.0 105.0)"/><ellipse cx="398.0" cy="86.0" rx="437" ry="37" fill="none" stroke="#6699ff" stroke-opacity=".45" stroke-width=".8" stroke-dasharray="2 5" transform="rotate(-12 450.0 105.0)"/><ellipse cx="492.0" cy="88.0" rx="417" ry="88" fill="none" stroke="#6699ff" stroke-opacity=".45" stroke-width=".8"  transform="rotate(-5 450.0 105.0)"/>
-<path class="spin" d="M110,26 Q110,48 125.84,48 Q110,48 110,70 Q110,48 94.16,48 Q110,48 110,26Z" fill="#2424d9"  /><path class="" d="M800,154 Q800,170 811.52,170 Q800,170 800,186 Q800,170 788.48,170 Q800,170 800,154Z" fill="#111"  stroke="#5c6175" stroke-width=".6"/><path class="tw" d="M840,31 Q840,40 846.48,40 Q840,40 840,49 Q840,40 833.52,40 Q840,40 840,31Z" fill="#6699ff"  /><path class="tw" d="M60,158 Q60,165 65.04,165 Q60,165 60,172 Q60,165 54.96,165 Q60,165 60,158Z" fill="#f2f4fa"  />
-<g class="wing"><g class="" ><path d="M671.4,106.7 Q722.0,54.3 787.9,24.6 Q719.7,50.9 668.1,101.8Z" fill="url(#chrome)"/><path d="M705.6,74.1 Q706.6,55.9 715.0,40.1 Q704.4,55.2 702.6,73.1Z" fill="url(#chrome)"/><path d="M730.7,56.2 Q743.0,59.6 755.8,56.3 Q743.2,57.3 730.9,53.0Z" fill="url(#chrome)"/><path d="M756.9,40.6 Q757.1,31.6 760.7,23.7 Q755.0,30.9 753.8,39.6Z" fill="url(#chrome)"/><path d="M670.7,107.6 Q758.6,69.5 852.4,51.9 Q757.3,64.8 668.8,100.9Z" fill="url(#chrome)"/><path d="M728.1,83.7 Q737.0,61.0 754.5,44.7 Q735.2,59.7 725.5,81.8Z" fill="url(#chrome)"/><path d="M768.0,71.5 Q782.2,81.0 799.7,82.5 Q783.1,79.0 769.2,68.5Z" fill="url(#chrome)"/><path d="M806.8,61.8 Q811.0,50.6 819.1,42.3 Q809.2,49.3 804.3,59.9Z" fill="url(#chrome)"/><path d="M669.8,108.2 Q776.6,107.0 883.5,104.2 Q776.6,101.5 669.8,100.2Z" fill="url(#chrome)"/><path d="M739.1,105.5 Q755.8,83.8 779.8,71.7 Q754.4,82.1 737.2,103.0Z" fill="url(#chrome)"/><path d="M786.3,105.5 Q798.7,120.3 817.0,127.4 Q800.0,118.5 788.3,103.0Z" fill="url(#chrome)"/><path d="M831.0,105.5 Q839.0,94.7 850.4,88.3 Q837.7,93.0 829.1,103.0Z" fill="url(#chrome)"/><path d="M668.9,107.6 Q753.7,140.7 844.9,147.9 Q754.9,136.0 670.6,100.9Z" fill="url(#chrome)"/><path d="M725.1,125.0 Q743.1,110.6 765.3,105.4 Q742.2,108.6 723.8,122.1Z" fill="url(#chrome)"/><path d="M763.3,135.3 Q770.5,149.9 784.1,159.4 Q772.2,148.5 765.8,133.4Z" fill="url(#chrome)"/><path d="M800.6,143.1 Q809.3,135.8 819.9,132.7 Q808.4,133.7 799.3,140.1Z" fill="url(#chrome)"/><path d="M668.2,106.8 Q717.3,153.7 782.5,174.7 Q719.5,150.1 671.3,101.7Z" fill="url(#chrome)"/><path d="M702.6,133.8 Q718.5,127.7 735.2,128.8 Q718.3,125.4 702.3,130.6Z" fill="url(#chrome)"/><path d="M726.4,149.7 Q728.3,161.5 736.0,171.2 Q730.4,160.7 729.5,148.6Z" fill="url(#chrome)"/><path d="M751.6,163.4 Q759.4,160.1 767.4,160.1 Q759.1,157.9 751.3,160.2Z" fill="url(#chrome)"/><path d="M680.2,98.8 Q669.1,71.2 688.0,49.9 Q665.7,70.4 675.3,97.7Z" fill="url(#chrome)"/><path d="M675.3,110.8 Q665.7,138.1 688.0,158.6 Q669.1,137.3 680.2,109.7Z" fill="url(#chrome)"/><path d="M709.3,74.9 Q689.4,64.4 688.8,42.8 Q687.3,65.6 706.2,76.6Z" fill="url(#chrome)"/><path d="M706.2,131.9 Q687.3,142.9 688.8,165.7 Q689.4,144.1 709.3,133.6Z" fill="url(#chrome)"/></g><g class="" transform="translate(900,0) scale(-1,1)"><path d="M671.4,106.7 Q722.0,54.3 787.9,24.6 Q719.7,50.9 668.1,101.8Z" fill="url(#chrome)"/><path d="M705.6,74.1 Q706.6,55.9 715.0,40.1 Q704.4,55.2 702.6,73.1Z" fill="url(#chrome)"/><path d="M730.7,56.2 Q743.0,59.6 755.8,56.3 Q743.2,57.3 730.9,53.0Z" fill="url(#chrome)"/><path d="M756.9,40.6 Q757.1,31.6 760.7,23.7 Q755.0,30.9 753.8,39.6Z" fill="url(#chrome)"/><path d="M670.7,107.6 Q758.6,69.5 852.4,51.9 Q757.3,64.8 668.8,100.9Z" fill="url(#chrome)"/><path d="M728.1,83.7 Q737.0,61.0 754.5,44.7 Q735.2,59.7 725.5,81.8Z" fill="url(#chrome)"/><path d="M768.0,71.5 Q782.2,81.0 799.7,82.5 Q783.1,79.0 769.2,68.5Z" fill="url(#chrome)"/><path d="M806.8,61.8 Q811.0,50.6 819.1,42.3 Q809.2,49.3 804.3,59.9Z" fill="url(#chrome)"/><path d="M669.8,108.2 Q776.6,107.0 883.5,104.2 Q776.6,101.5 669.8,100.2Z" fill="url(#chrome)"/><path d="M739.1,105.5 Q755.8,83.8 779.8,71.7 Q754.4,82.1 737.2,103.0Z" fill="url(#chrome)"/><path d="M786.3,105.5 Q798.7,120.3 817.0,127.4 Q800.0,118.5 788.3,103.0Z" fill="url(#chrome)"/><path d="M831.0,105.5 Q839.0,94.7 850.4,88.3 Q837.7,93.0 829.1,103.0Z" fill="url(#chrome)"/><path d="M668.9,107.6 Q753.7,140.7 844.9,147.9 Q754.9,136.0 670.6,100.9Z" fill="url(#chrome)"/><path d="M725.1,125.0 Q743.1,110.6 765.3,105.4 Q742.2,108.6 723.8,122.1Z" fill="url(#chrome)"/><path d="M763.3,135.3 Q770.5,149.9 784.1,159.4 Q772.2,148.5 765.8,133.4Z" fill="url(#chrome)"/><path d="M800.6,143.1 Q809.3,135.8 819.9,132.7 Q808.4,133.7 799.3,140.1Z" fill="url(#chrome)"/><path d="M668.2,106.8 Q717.3,153.7 782.5,174.7 Q719.5,150.1 671.3,101.7Z" fill="url(#chrome)"/><path d="M702.6,133.8 Q718.5,127.7 735.2,128.8 Q718.3,125.4 702.3,130.6Z" fill="url(#chrome)"/><path d="M726.4,149.7 Q728.3,161.5 736.0,171.2 Q730.4,160.7 729.5,148.6Z" fill="url(#chrome)"/><path d="M751.6,163.4 Q759.4,160.1 767.4,160.1 Q759.1,157.9 751.3,160.2Z" fill="url(#chrome)"/><path d="M680.2,98.8 Q669.1,71.2 688.0,49.9 Q665.7,70.4 675.3,97.7Z" fill="url(#chrome)"/><path d="M675.3,110.8 Q665.7,138.1 688.0,158.6 Q669.1,137.3 680.2,109.7Z" fill="url(#chrome)"/><path d="M709.3,74.9 Q689.4,64.4 688.8,42.8 Q687.3,65.6 706.2,76.6Z" fill="url(#chrome)"/><path d="M706.2,131.9 Q687.3,142.9 688.8,165.7 Q689.4,144.1 709.3,133.6Z" fill="url(#chrome)"/></g></g>
+<path class="spin" d="M232.25,42 Q232.25,56 242.33,56 Q232.25,56 232.25,70 Q232.25,56 222.17,56 Q232.25,56 232.25,42Z" fill="#2424d9"  /><path class="" d="M800,154 Q800,170 811.52,170 Q800,170 800,186 Q800,170 788.48,170 Q800,170 800,154Z" fill="#111"  stroke="#5c6175" stroke-width=".6"/><path class="tw" d="M840,31 Q840,40 846.48,40 Q840,40 840,49 Q840,40 833.52,40 Q840,40 840,31Z" fill="#6699ff"  /><path class="tw" d="M60,158 Q60,165 65.04,165 Q60,165 60,172 Q60,165 54.96,165 Q60,165 60,158Z" fill="#f2f4fa"  />
+<g class="sfl" style="animation-delay:0.000s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*;=++++==++=*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-=*+-:.     .,;==#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#;**;.   .,,,.   .:-#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#:**:  .;*%@@@%*-.  ,-#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,=*-. .=@#-,.,-*@*:  ,-* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %,+*;  ,*@- @.  ,+%+,  :% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %,=#-. .=%%+@#,  -%*,  ,% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,;**;.  :-+=:  ,+%+,  :* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#.;*#=,      .:+%*:  .#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :# ,=##*=---+*%#=,  .#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #- .:-+***+=:.   -#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:         :*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:0.150s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*=++=-;;;--=*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-++-,.       .,;-#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#=*-,   ,:---:,   .:#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#-*-.  :+%@%#%%%*;.  ,#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *:*+,  :#%=,   ,-#%-.  :* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %;*=, .-@*, @:.  ;##;  .% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %:*+,  :#@+;@@=. ,*%-. .% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,=#=.  ,=#%#=,  ;##;  ,* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#,=#+:.       .;*%=.  #, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#.;*#*-:,,,:=*%*;.  #:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-.:=*#####*=:.  -#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*: .....   :*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:0.300s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*==-;:,,,::;*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #=+-,.         .,-#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#+=:   ,;=***=;,   ,#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#+=,  ,=%%#+=+*%%+,  .#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *-+;. .=@*:     ,+%*:  ,* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %=+;  ,*%-  @+:  .+%+,  % </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %-*-. .=@#;.@%#,  -%*,  % </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *:++:  .-#@@@#;. .=%+, ,* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#;**;.   .,.   .=#*:  #, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#:+#+-,.. ..:-*%+:  #:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-:=*###*###*=:. -#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:.,:::,,. :*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:0.450s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*-;:,......:*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #=-:.    ...     -#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#=;.  .;+#%%%#+;,   #:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#+;. .;#@*-::;-*%#-.  #, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *==,  ;#%-.     .:*%=. ,* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %+-. .-%*, .@%+,  :##;  % </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %+=,  :#%=. @*@-. ,+%-. % </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *-*-.  :*@@%@@*,  :*#; ,* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#=*-,  .,;;;,   :+#=. #, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#-*+-,.     .,=##-. #:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #--+**+===+*#*=, -#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*::--==-;,.:*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:0.600s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*;,.       :*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-:.   .,:::,.   -#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#-,  .;+%%%%%%#+;.  #:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#-,  ,+%#-,...,-*%*:  #, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *=;  .+@*,  ...  .-#*; ,* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %=:  ,*%-  :@@%-. .=%+, % </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %+;. .+@*:  @;@#,  ;#*, % </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *==,  ,+%%*+*%%-. .=#+,,* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#+=:   ,-+++-,  .;#*; #, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#=+-,.       .:=#*;.#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-+*+=;;:;-=*#*-,-#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*;-=++++=;,:*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:0.750s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:.        :*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-.   .:;-=-;:.  -#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#:   :+%%#***#%#+:. #:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#:  .-%%=,.   .,-##=, #, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *-,  ;#%;  .::,.  ,+#=,,* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %-. .-%*, .=@%@*:  :*#; % </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %-,  ;#%-.  @,*@-. ,+#-.% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *=;. .-#%*-;-*@#:  :**;,* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#=;.  ,-*%%%*-,  ,=#=,#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#+-:.    .    .:+#=,#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-+=-:,...,:-+*+;-#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*-++****+=-:*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:0.900s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:         :*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-   .:=+***+-:. -#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#.  ,=#%*+---=*##=, #:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#.  :*%+:.      ,=#*;.#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *:  ,+%+,  :=+-:  .;**;,* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %,  ,*%-  ,#@+%%=. .-#=,% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %:  ,+%+,  .@ -@*,  ;*+,% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *-,  :*@*-,.,-#@=. .-*=,* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#-,  .-*%@@@%*;.  :**:#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#-:.   .,,,.   .;**;#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #==;,.     .:-+*=-#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*=++==++++=;*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:1.050s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:   ..... :*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-  .:=*#####*=:.-#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#  .;*%*=:,,,:-*#*;.#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#  .=%*;.       .:+#=,#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,  ;##;  ,=#%#=,  .=#=,* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %. .-%*, .=@@;+@#:  ,+*:% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %.  ;##;  .:@ ,*@-. ,=*;% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *:  .-%#-,   ,=%#:  ,+*:* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#,  .;*%%%#%@%+:  .-*-#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#:.   ,:---:,   ,-*=#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-;,.       .,-++-#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*=--;;;-=++=*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:1.200s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*: .,,:::,.:*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #- .:=*###*###*=:-#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#  :+%*-:.. ..,-+#+:#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#  :*#=.   .,.   .;**;#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *, ,+%=. .;#@@@#-.  :++:* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %  ,*%-  ,#%@.;#@=. .-*-% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %  ,+%+.  :+@  -%*,  ;+=% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,  :*%+,     :*@=. .;+-* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#.  ,+%%*+=+#%%=,  ,=+#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#,   ,;=***=;,   :=+#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-,.         .,-+=#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*;::,,,:;-==*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:1.350s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:.,;-==--::*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #- ,=*#*+===+**+--#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :# .-##=,.     .,-+*-#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,# .=#+:   ,;;;,.  ,-*=#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *, ;#*:  ,*@@%@@*:  .-*-* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> % .-%+, .-@*@ .=%#:  ,=+% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %  ;##:  ,+%@. ,*%-. .-+% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *, .=%*:.     .-%#;  ,==* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#  .-#%*-;::-*@#;. .;+#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#   ,;+#%%%#+;.  .;=#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-     ...    .:-=#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:......,:;-*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:1.500s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:,;=++++=-;*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-,-*#*=-;:;;=+*+-#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#.;*#=:.       .,-+=#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,# ;*#;.  ,-+++-,   :=+#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,,+#=. .-%%*+*%%+,  ,==* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> % ,*#;  ,#@;@  :*@+. .;+% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> % ,+%=. .-%@@:  -%*,  :=% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *, ;*#-.  ...  ,*@+.  ;=* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#  :*%*-,...,-#%+,  ,-#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#  .;+#%%%%%%+;.  ,-#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-   .,:::,.   .:-#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:       .,;*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfl" style="animation-delay:1.650s"><text x="39.1" y="26.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text>
+<text x="39.1" y="37.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="47.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:-=+****++-*+      </text>
+<text x="39.1" y="58.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-;+*+-:,...,:-=+-#    </text>
+<text x="39.1" y="68.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :#,=#+:.    .    .:-+#:  </text>
+<text x="39.1" y="79.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,#,=#=,  ,-*%%%*-,  .;=#, </text>
+<text x="39.1" y="89.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,;**:  :#@*-;-*%#-. .;=* </text>
+<text x="39.1" y="100.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> %.-#+, .-@*,@  .-%#;  ,-% </text>
+<text x="39.1" y="110.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> % ;#*:  :*@%@=. ,*%-. .-% </text>
+<text x="39.1" y="121.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> *,,=#+,  .,::.  ;%#;  ,-* </text>
+<text x="39.1" y="131.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve"> ,# ,=##-,.   .,=%%-.  :#, </text>
+<text x="39.1" y="142.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">  :# .:+#%#***#%%+:   :#:  </text>
+<text x="39.1" y="152.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">    #-  .:;-=-;:.   .-#    </text>
+<text x="39.1" y="163.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">      +*:        .:*+      </text>
+<text x="39.1" y="173.6" font-size="10.5" fill="url(#egl)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="39.1" y="184.1" font-size="10.5" fill="url(#egl)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:0.000s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*;=++++==++=*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-=*+-:.     .,;==#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#;**;.   .,,,.   .:-#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#:**:  .;*%@@@%*-.  ,-#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,=*-. .=@#-,.,-*@*:  ,-* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %,+*;  ,*@- @.  ,+%+,  :% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %,=#-. .=%%+@#,  -%*,  ,% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,;**;.  :-+=:  ,+%+,  :* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#.;*#=,      .:+%*:  .#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :# ,=##*=---+*%#=,  .#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #- .:-+***+=:.   -#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:         :*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:0.150s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:-=+****++-*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-;+*+-:,...,:-=+-#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#,=#+:.    .    .:-+#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#,=#=,  ,-*%%%*-,  .;=#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,;**:  :#@*-;-*%#-. .;=* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %.-#+, .-@*,@  .-%#;  ,-% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> % ;#*:  :*@%@=. ,*%-. .-% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,,=#+,  .,::.  ;%#;  ,-* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,# ,=##-,.   .,=%%-.  :#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :# .:+#%#***#%%+:   :#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-  .:;-=-;:.   .-#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:        .:*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:0.300s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:,;=++++=-;*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-,-*#*=-;:;;=+*+-#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#.;*#=:.       .,-+=#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,# ;*#;.  ,-+++-,   :=+#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,,+#=. .-%%*+*%%+,  ,==* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> % ,*#;  ,#@;@  :*@+. .;+% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> % ,+%=. .-%@@:  -%*,  :=% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *, ;*#-.  ...  ,*@+.  ;=* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#  :*%*-,...,-#%+,  ,-#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#  .;+#%%%%%%+;.  ,-#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-   .,:::,.   .:-#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:       .,;*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:0.450s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:.,;-==--::*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #- ,=*#*+===+**+--#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :# .-##=,.     .,-+*-#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,# .=#+:   ,;;;,.  ,-*=#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *, ;#*:  ,*@@%@@*:  .-*-* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> % .-%+, .-@*@ .=%#:  ,=+% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %  ;##:  ,+%@. ,*%-. .-+% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *, .=%*:.     .-%#;  ,==* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#  .-#%*-;::-*@#;. .;+#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#   ,;+#%%%#+;.  .;=#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-     ...    .:-=#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:......,:;-*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:0.600s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*: .,,:::,.:*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #- .:=*###*###*=:-#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#  :+%*-:.. ..,-+#+:#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#  :*#=.   .,.   .;**;#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *, ,+%=. .;#@@@#-.  :++:* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %  ,*%-  ,#%@.;#@=. .-*-% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %  ,+%+.  :+@  -%*,  ;+=% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,  :*%+,     :*@=. .;+-* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#.  ,+%%*+=+#%%=,  ,=+#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#,   ,;=***=;,   :=+#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-,.         .,-+=#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*;::,,,:;-==*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:0.750s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:   ..... :*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-  .:=*#####*=:.-#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#  .;*%*=:,,,:-*#*;.#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#  .=%*;.       .:+#=,#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,  ;##;  ,=#%#=,  .=#=,* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %. .-%*, .=@@;+@#:  ,+*:% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %.  ;##;  .:@ ,*@-. ,=*;% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *:  .-%#-,   ,=%#:  ,+*:* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#,  .;*%%%#%@%+:  .-*-#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#:.   ,:---:,   ,-*=#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-;,.       .,-++-#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*=--;;;-=++=*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:0.900s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:         :*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-   .:=+***+-:. -#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#.  ,=#%*+---=*##=, #:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#.  :*%+:.      ,=#*;.#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *:  ,+%+,  :=+-:  .;**;,* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %,  ,*%-  ,#@+%%=. .-#=,% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %:  ,+%+,  .@ -@*,  ;*+,% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *-,  :*@*-,.,-#@=. .-*=,* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#-,  .-*%@@@%*;.  :**:#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#-:.   .,,,.   .;**;#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #==;,.     .:-+*=-#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*=++==++++=;*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:1.050s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:.        :*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-.   .:;-=-;:.  -#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#:   :+%%#***#%#+:. #:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#:  .-%%=,.   .,-##=, #, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *-,  ;#%;  .::,.  ,+#=,,* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %-. .-%*, .=@%@*:  :*#; % </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %-,  ;#%-.  @,*@-. ,+#-.% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *=;. .-#%*-;-*@#:  :**;,* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#=;.  ,-*%%%*-,  ,=#=,#, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#+-:.    .    .:+#=,#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-+=-:,...,:-+*+;-#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*-++****+=-:*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:1.200s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*;,.       :*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-:.   .,:::,.   -#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#-,  .;+%%%%%%#+;.  #:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#-,  ,+%#-,...,-*%*:  #, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *=;  .+@*,  ...  .-#*; ,* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %=:  ,*%-  :@@%-. .=%+, % </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %+;. .+@*:  @;@#,  ;#*, % </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *==,  ,+%%*+*%%-. .=#+,,* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#+=:   ,-+++-,  .;#*; #, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#=+-,.       .:=#*;.#:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-+*+=;;:;-=*#*-,-#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*;-=++++=;,:*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:1.350s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*-;:,......:*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #=-:.    ...     -#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#=;.  .;+#%%%#+;,   #:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#+;. .;#@*-::;-*%#-.  #, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *==,  ;#%-.     .:*%=. ,* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %+-. .-%*, .@%+,  :##;  % </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %+=,  :#%=. @*@-. ,+%-. % </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *-*-.  :*@@%@@*,  :*#; ,* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#=*-,  .,;;;,   :+#=. #, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#-*+-,.     .,=##-. #:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #--+**+===+*#*=, -#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*::--==-;,.:*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:1.500s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*==-;:,,,::;*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #=+-,.         .,-#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#+=:   ,;=***=;,   ,#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#+=,  ,=%%#+=+*%%+,  .#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *-+;. .=@*:     ,+%*:  ,* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %=+;  ,*%-  @+:  .+%+,  % </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %-*-. .=@#;.@%#,  -%*,  % </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *:++:  .-#@@@#;. .=%+, ,* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#;**;.   .,.   .=#*:  #, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#:+#+-,.. ..:-*%+:  #:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-:=*###*###*=:. -#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*:.,:::,,. :*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g><g class="sfr" style="animation-delay:1.650s"><text x="690.8" y="26.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text>
+<text x="690.8" y="37.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="47.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*=++=-;;;--=*+      </text>
+<text x="690.8" y="58.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-++-,.       .,;-#    </text>
+<text x="690.8" y="68.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#=*-,   ,:---:,   .:#:  </text>
+<text x="690.8" y="79.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#-*-.  :+%@%#%%%*;.  ,#, </text>
+<text x="690.8" y="89.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *:*+,  :#%=,   ,-#%-.  :* </text>
+<text x="690.8" y="100.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %;*=, .-@*, @:.  ;##;  .% </text>
+<text x="690.8" y="110.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> %:*+,  :#@+;@@=. ,*%-. .% </text>
+<text x="690.8" y="121.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> *,=#=.  ,=#%#=,  ;##;  ,* </text>
+<text x="690.8" y="131.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve"> ,#,=#+:.       .;*%=.  #, </text>
+<text x="690.8" y="142.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">  :#.;*#*-:,,,:=*%*;.  #:  </text>
+<text x="690.8" y="152.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">    #-.:=*#####*=:.  -#    </text>
+<text x="690.8" y="163.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">      +*: .....   :*+      </text>
+<text x="690.8" y="173.6" font-size="10.5" fill="url(#egr)"  xml:space="preserve">         :=#%@%#=:         </text>
+<text x="690.8" y="184.1" font-size="10.5" fill="url(#egr)"  xml:space="preserve">                           </text></g>
 <line x1="226.25" y1="32" x2="673.75" y2="32" stroke="url(#chrome)" stroke-width=".8"/>
 <text x="450.0" y="28" font-size="11" fill="#5c6175" text-anchor="middle" letter-spacing="4">✠ welcome. please lower your expectations ✠</text>
 <g class="g1"><text x="236.25" y="52.0" font-size="12.5" fill="#ff2a2a"  xml:space="preserve">  ██████  ██░ ██  ██▀███  ▓█████  ███▄    █  ██▓▒██   ██▒</text>
@@ -68,11 +429,11 @@
 <text x="236.25" y="127.0" font-size="12.5" fill="#ff2a2a"  xml:space="preserve">░ ░▒  ░ ░ ▒ ░▒░ ░  ░▒ ░ ▒░ ░ ░  ░░ ░░   ░ ▒░ ▒ ░░░   ░▒ ░</text>
 <text x="236.25" y="139.5" font-size="12.5" fill="#ff2a2a"  xml:space="preserve">░  ░  ░   ░  ░░ ░  ░░   ░    ░      ░   ░ ░  ▒ ░ ░    ░  </text>
 <text x="236.25" y="152.0" font-size="12.5" fill="#ff2a2a"  xml:space="preserve">      ░   ░  ░  ░   ░        ░  ░         ░  ░   ░    ░  </text></g></g>
-<path class="rp" d="M450.0,1 Q450.0,14 459.36,14 Q450.0,14 450.0,27 Q450.0,14 440.64,14 Q450.0,14 450.0,1Z" fill="#ff2a2a" filter="url(#glow)" />
+<defs><radialGradient id="fg67932"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset=".25" stop-color="#99ccff" stop-opacity=".45"/><stop offset="1" stop-color="#99ccff" stop-opacity="0"/></radialGradient></defs><g class="fl" style="transform-origin:679.75px 32px"><circle cx="679.75" cy="32" r="14.4" fill="url(#fg67932)"/><path d="M679.75,8.599999999999998 L680.29,32 L679.75,55.400000000000006 L679.21,32Z" fill="#ffffff" opacity=".9" transform="rotate(0 679.75 32)"/><path d="M679.75,8.599999999999998 L680.29,32 L679.75,55.400000000000006 L679.21,32Z" fill="#ffffff" opacity=".9" transform="rotate(90 679.75 32)"/><g class="flr" style="transform-origin:679.75px 32px"><path d="M679.75,22.1 L680.11,32 L679.75,41.9 L679.39,32Z" fill="#ffffff" opacity=".7" transform="rotate(45 679.75 32)"/><path d="M679.75,22.1 L680.11,32 L679.75,41.9 L679.39,32Z" fill="#ffffff" opacity=".7" transform="rotate(135 679.75 32)"/><path d="M679.75,22.1 L680.11,32 L679.75,41.9 L679.39,32Z" fill="#ffffff" opacity=".7" transform="rotate(22 679.75 32)"/><path d="M679.75,22.1 L680.11,32 L679.75,41.9 L679.39,32Z" fill="#ffffff" opacity=".7" transform="rotate(112 679.75 32)"/><path d="M679.75,22.1 L680.11,32 L679.75,41.9 L679.39,32Z" fill="#ffffff" opacity=".7" transform="rotate(67 679.75 32)"/><path d="M679.75,22.1 L680.11,32 L679.75,41.9 L679.39,32Z" fill="#ffffff" opacity=".7" transform="rotate(157 679.75 32)"/></g><path class="" d="M679.75,27.05 Q679.75,32 683.314,32 Q679.75,32 679.75,36.95 Q679.75,32 676.186,32 Q679.75,32 679.75,27.05Z" fill="#ffffff"  /></g><path class="rp" d="M669.75,150.5 Q669.75,158.5 675.51,158.5 Q669.75,158.5 669.75,166.5 Q669.75,158.5 663.99,158.5 Q669.75,158.5 669.75,150.5Z" fill="#ff2a2a" filter="url(#glow)" />
 <clipPath id="tc"><rect class="type" x="290" y="170.5" height="20" width="0"/></clipPath>
 <text x="290" y="184.5" font-size="13" fill="#b8c2dc" clip-path="url(#tc)" xml:space="preserve">shreyan bag † ai/ml † full-stack † modder</text>
 <g class="mv"><rect class="cur" x="291" y="172.5" width="8" height="15" fill="#ff2a2a"/></g>
-<defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity="0.035"/></pattern>
+<filter id="gr"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -.5"/></filter><rect width="900" height="210" filter="url(#gr)" opacity="0.09"/><defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" opacity="0.035"/></pattern>
 <radialGradient id="vig" cx="50%" cy="50%" r="72%"><stop offset="55%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.75"/></radialGradient></defs>
 <rect width="900" height="210" fill="url(#scan)" class="scan"/><rect width="900" height="210" fill="url(#vig)"/>
 </g></svg>
