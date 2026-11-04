@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="220" viewBox="0 0 440 220">
 <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace}
 .in{opacity:0;animation:in .45s ease-out both}@keyframes in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
-.rp{animation:rp 2.4s ease-in-out infinite}@keyframes rp{0%,100%{opacity:.45}50%{opacity:1}}
+
 .sb,.lb{transform-box:fill-box;transform-origin:left;animation:g 1s cubic-bezier(.2,.8,.2,1) both}@keyframes g{from{transform:scaleX(0)}to{transform:scaleX(1)}}</style>
 <defs>
 <linearGradient id="chrome" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="300" y2="100" spreadMethod="reflect">
 <stop offset="0" stop-color="#3b3f63"/><stop offset=".35" stop-color="#f6f8ff"/><stop offset=".5" stop-color="#8fa6ff"/><stop offset=".7" stop-color="#ffffff"/><stop offset="1" stop-color="#4b55a8"/>
-<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+</linearGradient>
 <linearGradient id="barb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#99ccff"/><stop offset=".5" stop-color="#2424d9"/><stop offset="1" stop-color="#14148a"/></linearGradient>
 <linearGradient id="barc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#9aa0aa"/><stop offset=".55" stop-color="#6c717a"/><stop offset="1" stop-color="#d7dbe1"/></linearGradient>
 <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
