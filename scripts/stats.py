@@ -25,7 +25,7 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
     followers { totalCount }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, orderBy: {field: PUSHED_AT, direction: DESC}) {
       totalCount
-      nodes { stargazerCount forkCount languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } }
+      nodes { stargazerCount forkCount primaryLanguage { name } languages(first: 10, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } }
     }
     repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, PULL_REQUEST, ISSUE]) { totalCount }
     contributionsCollection(from: $from, to: $to) {
@@ -58,10 +58,18 @@ def fetch():
         raise SystemExit(data["errors"])
     u = data["data"]["user"]
     repos = u["repositories"]["nodes"]
+    # count each repo's main language (byte counts get skewed by vendored libraries)
+    IGNORE = {"NASL", "Cython", "Makefile", "Batchfile", "PowerShell", "Dockerfile", "Procfile", "Smarty", "Roff"}
+    RENAME = {"Jupyter Notebook": "Python"}
     sizes = {}
     for r in repos:
-        for ed in r["languages"]["edges"]:
-            sizes[ed["node"]["name"]] = sizes.get(ed["node"]["name"], 0) + ed["size"]
+        lang = (r.get("primaryLanguage") or {}).get("name")
+        if lang in IGNORE or not lang:
+            edges = [ed for ed in r["languages"]["edges"] if ed["node"]["name"] not in IGNORE]
+            lang = edges[0]["node"]["name"] if edges else None
+        if lang:
+            lang = RENAME.get(lang, lang)
+            sizes[lang] = sizes.get(lang, 0) + 1
     tot = sum(sizes.values()) or 1
     langs = sorted(((k, 100 * v / tot) for k, v in sizes.items()), key=lambda x: -x[1])[:8]
     cc = u["contributionsCollection"]
