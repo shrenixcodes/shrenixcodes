@@ -64,9 +64,7 @@ and i care a lot about how things *feel* to use.
 
 <a href="https://github.com/shrenixcodes"><img src="https://img.shields.io/badge/github-shrenixcodes-ff7eb9?style=for-the-badge&logo=github&logoColor=white&labelColor=0d0b10" /></a>
 <a href="https://linkedin.com/in/shreyan-bag-a81328351"><img src="https://img.shields.io/badge/linkedin-connect-c9a7ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0b10" /></a>
-<!-- uncomment to show your email:
-<a href="mailto:YOUR-EMAIL"><img src="https://img.shields.io/badge/email-say%20hi-7fe3ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0b10" /></a>
--->
+<a href="mailto:subhoberh2004@gmail.com"><img src="https://img.shields.io/badge/email-say%20hi-7fe3ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0b10" /></a>
 <img src="https://komarev.com/ghpvc/?username=shrenixcodes&label=visitors&color=ff7eb9&style=for-the-badge&labelColor=0d0b10" />
 
 <br/><br/>
