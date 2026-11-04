@@ -193,7 +193,9 @@ def activity_card(s):
     d = f"M{pts[0][0]:.1f},{pts[0][1]:.1f}"
     for i in range(len(pts) - 1):
         p0 = pts[max(i-1, 0)]; p1 = pts[i]; p2 = pts[i+1]; p3 = pts[min(i+2, len(pts)-1)]
-        c1 = (p1[0] + (p2[0]-p0[0])/6, p1[1] + (p2[1]-p0[1])/6); c2 = (p2[0] - (p3[0]-p1[0])/6, p2[1] - (p3[1]-p1[1])/6)
+        c1 = (p1[0] + (p2[0]-p0[0])/6, min(y1, p1[1] + (p2[1]-p0[1])/6)); c2 = (p2[0] - (p3[0]-p1[0])/6, min(y1, p2[1] - (p3[1]-p1[1])/6))
+        if p1[1] >= y1 or p2[1] >= y1:  # keep flat stretches on the baseline
+            c1 = (c1[0], max(c1[1], min(p1[1], p2[1]))); c2 = (c2[0], max(c2[1], min(p1[1], p2[1])))
         d += f" C{c1[0]:.1f},{c1[1]:.1f} {c2[0]:.1f},{c2[1]:.1f} {p2[0]:.1f},{p2[1]:.1f}"
     area = d + f" L{x1},{y1} L{x0},{y1}Z"
     L = sum(math.hypot(pts[i+1][0]-pts[i][0], pts[i+1][1]-pts[i][1]) for i in range(len(pts)-1)) * 1.25
