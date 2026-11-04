@@ -24,7 +24,6 @@ how things *look* and *feel* to use.
 
 - ✦ ex-junior ai intern @ **blockrank**
 - ✦ 5 internships & job sims cleared
-- ✦ strong in dsa & problem solving
 
 <sub>† currently: shipping side projects way past bedtime</sub>
 
@@ -39,14 +38,15 @@ how things *look* and *feel* to use.
 <tr><td><b>† ai / ml</b></td><td>machine learning · deep learning · tensorflow / keras · pytorch · scikit-learn · xgboost · model evaluation · feature engineering</td></tr>
 <tr><td><b>† llms & gen ai</b></td><td>llm fine-tuning · rag systems · agentic ai workflows · ai apis & chatbots · prompt engineering · vertex ai · speech-to-text (whisper)</td></tr>
 <tr><td><b>† computer vision</b></td><td>opencv · mediapipe · face detection & tracking · facial emotion recognition · lip-motion / visual vad</td></tr>
-<tr><td><b>† data</b></td><td>pandas · numpy · matplotlib · seaborn · plotly · streamlit · eda · data cleaning · clustering · data visualization</td></tr>
-<tr><td><b>† frontend</b></td><td>react · next.js · vite · tailwind css · three.js · react three fiber · phaser · zustand · recharts</td></tr>
+<tr><td><b>† data</b></td><td>data analysis · pandas · numpy · matplotlib · seaborn · plotly · streamlit · eda · data cleaning · clustering · data visualization</td></tr>
+<tr><td><b>† frontend</b></td><td>full-stack development · react.js · next.js · vite · tailwind css · three.js · react three fiber · phaser · zustand · recharts</td></tr>
 <tr><td><b>† backend</b></td><td>fastapi · flask · node.js · rest apis · asyncio · prisma · sqlalchemy · alembic · postgresql · sqlite</td></tr>
 <tr><td><b>† android & desktop</b></td><td>kotlin · jetpack compose · room · workmanager · electron · rust tuis (ratatui)</td></tr>
-<tr><td><b>† devops & cloud</b></td><td>docker · docker compose · ci/cd · prometheus · google cloud · vercel · git · github · linux</td></tr>
+<tr><td><b>† devops & cloud</b></td><td>cloud applications · google cloud · docker · docker compose · ci/cd · prometheus · vercel · git · github · linux</td></tr>
 <tr><td><b>† testing</b></td><td>pytest · vitest · unit testing</td></tr>
 <tr><td><b>† game dev & modding</b></td><td>fivem (qbox · qbcore · esx) · minecraft plugins (gradle · maven) · browser games</td></tr>
 <tr><td><b>† design</b></td><td>ui/ux design · creative coding · motion & glitch effects</td></tr>
+<tr><td><b>† core</b></td><td>data structures & algorithms · problem solving · adaptability</td></tr>
 </table>
 
 <img src="assets/divider.svg" width="100%" />
