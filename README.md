@@ -17,21 +17,26 @@
 
 **✦ ── hi, i'm shreyan ── ✦**
 
-b.tech cse **(ai & ml)** student and ai/ml engineer-in-training.
+b.tech cse **(ai & ml)** student. i teach computers to think
+so i don't have to.
+
 i build ai systems, full-stack web apps, android apps,
-terminal tools and game mods, and i care a lot about
-how things *look* and *feel* to use.
+terminal tools and game mods, mostly to avoid doing things manually.
+i care a lot about how things *look* and *feel*, which is why my css has trust issues.
 
-- ✦ ex-junior ai intern @ **blockrank**
-- ✦ 5 internships & job sims cleared
+- ✦ ex-junior ai intern @ **blockrank** (the llms survived. mostly.)
+- ✦ 5 internships & job sims cleared (my sleep schedule did not)
+- ✦ fluent in python, java, c++ and reading stack traces at 2am
 
-<sub>† currently: shipping side projects way past bedtime</sub>
+<sub>† currently: shipping side projects at 3am and calling it "work-life balance"</sub>
 
 </td>
 </tr>
 </table>
 
 **✦ ── s k i l l &nbsp; t r e e ── ✦**
+
+<sub>things i've googled enough times to call myself proficient</sub>
 
 <table>
 <tr><td><b>† languages</b></td><td>python · java · c · c++ · kotlin · typescript · javascript · rust · lua · sql · html · css</td></tr>
@@ -61,6 +66,8 @@ how things *look* and *feel* to use.
 
 **✦ ── s t a t i s t i c s ── ✦**
 
+<sub>numbers that prove i should touch grass more often</sub>
+
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=shrenixcodes&show_icons=true&hide_border=true&bg_color=050507&title_color=6699ff&icon_color=99ccff&text_color=f2f4fa&ring_color=2424d9&count_private=true&custom_title=%E2%9C%A6%20shrenix%27s%20stats%20%E2%9C%A6" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrenixcodes&layout=compact&hide_border=true&bg_color=050507&title_color=6699ff&text_color=f2f4fa&langs_count=8&custom_title=%E2%9C%A6%20spellbook%20%E2%9C%A6" />
 
@@ -70,7 +77,9 @@ how things *look* and *feel* to use.
 
 <img src="assets/divider.svg" width="100%" />
 
-<sub><i>「 it's not a bug, it's a side quest. 」</i></sub>
+<sub><i>「 it's not a bug, it's a side quest. 」</i></sub><br/>
+<sub><i>「 code is never finished. it just stops crashing long enough to push. 」</i></sub><br/>
+<sub><i>「 it works on my machine. we are not shipping my machine. 」</i></sub>
 
 <br/><br/>
 
