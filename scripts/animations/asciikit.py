@@ -161,6 +161,35 @@ def scanlines(img, strength=0.18):
     return out
 
 
+def svg_rows(idx, lvl, glyphs, x0, y0, cw, ch, baseline, levels, dx=0):
+    """One glyph grid as SVG text: a <text> per row, stretched to the exact grid width with
+    textLength so it lines up in whatever monospace font the viewer has, and <tspan> runs
+    coloured by brightness class. `levels` maps a cell level to a class name ('' = default ink).
+    """
+    from xml.sax.saxutils import escape
+
+    out = []
+    for r in range(idx.shape[0]):
+        row = idx[r]
+        on = np.nonzero(row)[0]
+        if not len(on):
+            continue
+        a, b = on[0], on[-1] + 1
+        parts, cur, buf = [], None, []
+        for c in range(a, b):
+            k = levels(lvl[r, c]) if row[c] else cur  # spaces join whatever run they sit in
+            if k != cur and buf:
+                parts.append((cur, "".join(buf)))
+                buf = []
+            cur = k
+            buf.append(glyphs[row[c]])
+        parts.append((cur, "".join(buf)))
+        body = "".join(escape(s) if not k else '<tspan class="{}">{}</tspan>'.format(k, escape(s)) for k, s in parts)
+        out.append('<text x="{:g}" y="{:g}" textLength="{:g}">{}</text>'.format(
+            x0 + a * cw + dx, y0 + r * ch + baseline, (b - a) * cw, body))
+    return "".join(out)
+
+
 def type_layer(W, H, font_path, items):
     """Crisp text drawn straight onto the canvas: [(x, y, text, size, level, tracking)]."""
     im = Image.new("L", (W, H), 0)

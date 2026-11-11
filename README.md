@@ -1,4 +1,4 @@
-<img src="assets/animations/ascii-hero.gif" width="720" alt="Shreyan Bag — AI/ML, backend and real-time systems. A slowly turning lattice sculpture drawn in ASCII characters sits beside the name." />
+<img src="assets/animations/ascii-hero.svg" width="720" alt="Shreyan Bag — AI/ML, backend and real-time systems. A slowly turning lattice sculpture drawn in ASCII characters sits beside the name." />
 
 I'm Shreyan, a computer science student specialising in AI & ML at SRM IST, Chennai. Most of what I build sits where models meet real systems: vision pipelines that have to keep up with a webcam, LLM tools that are honest about what they don't know, and backends that survive retries, restarts and bad input.
 
@@ -9,6 +9,14 @@ I like understanding how things work underneath, so I also end up writing termin
 <!-- recent:start -->
 <sub>lately pushed to &nbsp; [pinn-vs-operators](https://github.com/shrenixcodes/pinn-vs-operators) nov 08 &nbsp;·&nbsp; [neon-rush](https://github.com/shrenixcodes/neon-rush) TypeScript · nov 03 &nbsp;·&nbsp; [prism_multichar](https://github.com/shrenixcodes/prism_multichar) Lua · nov 02</sub>
 <!-- recent:end -->
+
+&nbsp;
+
+## portfolio
+
+<a href="https://shrenixcodesportfolio.vercel.app/"><img src="assets/portfolio.jpg" width="720" alt="Screenshot of shrenixcodesportfolio.vercel.app: a deep blue 3D room with the word ABOUT in huge black letters curving across its walls, and the about-me text wrapped around the room beneath it." /></a>
+
+**[shrenixcodesportfolio.vercel.app](https://shrenixcodesportfolio.vercel.app/)** &nbsp;·&nbsp; a portfolio you step into: press **L** to enter a 3D room, look around with the mouse, and scroll to send each section (about, education, experience) wrapping around the walls in giant type.
 
 &nbsp;
 

@@ -1,11 +1,15 @@
 # ascii animations
 
-The two GIFs in `assets/animations/` are rendered here, offline and deterministically.
+The animations in `assets/animations/` are rendered here, offline and deterministically.
 Nothing in this folder runs in CI.
+
+The hero is an animated SVG (rows of text, one group per frame, switched by CSS) rather
+than a GIF: GitHub wraps README GIFs in a player that stays paused for visitors whose
+system asks for reduced motion, and SVG images are not wrapped.
 
 ```bash
 pip install -r scripts/animations/requirements.txt
-python scripts/animations/generate_ascii_hero.py        # ascii-hero.gif + .png
+python scripts/animations/generate_ascii_hero.py        # ascii-hero.svg + .png (add --gif for a GIF)
 python scripts/animations/generate_ascii_secondary.py   # ascii-secondary.gif + .png
 ```
 

@@ -15,9 +15,11 @@ import argparse
 import math
 import os
 
+from xml.sax.saxutils import escape
+
 import numpy as np
 
-from asciikit import Atlas, Palette, save_gif, scanlines, star, type_layer
+from asciikit import Atlas, Palette, save_gif, scanlines, star, svg_rows, type_layer
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 # every printable ASCII character, plus the few symbols the labels use
@@ -153,7 +155,7 @@ def build(args):
     # glitch events: (centre in loop time, half-width, first row, last row as fractions of the box, shift in cells)
     events = [(.21, .02, .30, .38, 3), (.64, .03, .55, .66, -5)]
     n = int(round(args.fps * args.seconds))
-    frames, stills = [], []
+    frames, stills, records = [], [], []
     for f in range(n):
         t = f / n
 
@@ -167,13 +169,14 @@ def build(args):
         slvl = np.where(sidx > 0, np.ceil(np.clip(.22 + mean * 1.8, 0, 1) * 6) / 6, 0)
         gs = fine.compose(sidx, slvl)
         # localized glitch: a band of rows jumps sideways, leaving a faint echo where it was
-        glitch = None
+        glitch, cells = None, None
         for centre, half, fa, fb, shift in events:
             if abs(((t - centre + .5) % 1) - .5) < half:
                 ya, yb_ = int(fa * srows) * fine.ch, int(fb * srows) * fine.ch
                 band = gs[ya:yb_].copy()
                 gs[ya:yb_] = np.maximum(np.roll(band, shift * fine.cw, axis=1) * 1.15, band * .3)
                 glitch = (ya, yb_)
+                cells = (int(fa * srows), int(fb * srows), shift)
 
         # type layer
         idx = np.zeros((rows, cols), int)
@@ -204,7 +207,96 @@ def build(args):
         frames.append(pal.image(q))
         if glitch is None:
             stills.append((f, pal.image(q)))
-    return frames, stills, (W, H)
+        records.append((sidx, slvl, cells, readout, stamp))
+
+    layout = dict(W=W, H=H, bx0=bx0, by0=by0, fine=fine, atlas=atlas, bold=bold, left=left, rows=rows, pal=pal)
+    return frames, stills, (W, H), records, layout
+
+
+# ---------------------------------------------------------------- svg
+def ascent(path, size):
+    from PIL import ImageFont
+    return ImageFont.truetype(path, size).getmetrics()[0]
+
+
+def star_path(cx, cy, r, fill):
+    k = r * .72
+    return ('<path d="M{0:.1f},{1:.1f} Q{0:.1f},{2:.1f} {3:.1f},{2:.1f} Q{0:.1f},{2:.1f} {0:.1f},{4:.1f} '
+            'Q{0:.1f},{2:.1f} {5:.1f},{2:.1f} Q{0:.1f},{2:.1f} {0:.1f},{1:.1f}Z" fill="{6}"/>').format(
+        cx, cy - r, cy, cx + k, cy + r, cx - k, fill)
+
+
+def write_svg(path, records, L, fps):
+    """The same frames as an animated SVG: rows of text, one group per frame, switched by CSS.
+
+    GitHub wraps README GIFs in a player that stays paused for visitors whose system asks
+    for reduced motion. An SVG image is not wrapped, so this version always plays.
+    """
+    W, H, fine, atlas, left, pal = L["W"], L["H"], L["fine"], L["atlas"], L["left"], L["pal"]
+    n, dur = len(records), len(records) / fps
+    bg = np.array(pal.colors[0], float)
+    ink = np.array(pal.colors[pal.steps - 1], float)
+
+    def tone(level):
+        return "#%02x%02x%02x" % tuple(int(round(x)) for x in bg + (ink - bg) * level ** 1.15)
+
+    def level_class(v):  # brightness in sixths; full brightness uses the default fill
+        k = int(round(v * 6))
+        return "d%d" % k if 1 <= k <= 5 else ""
+
+    a9, a11, a50 = ascent(fine.font_path, 9), ascent(atlas.font_path, 11), ascent(L["bold"], 50)
+    css = ["text{font-family:ui-monospace,Consolas,SFMono-Regular,Menlo,'DejaVu Sans Mono','Liberation Mono',monospace;"
+           "white-space:pre;fill:%s}" % tone(1), ".s text{font-size:9px}"]
+    css += [".d%d{fill:%s}" % (k, tone(k / 6)) for k in range(1, 6)]
+    css += [".f{visibility:hidden;animation:fr %.2fs steps(1,end) infinite}" % dur,
+            "@keyframes fr{0%%{visibility:visible}%.4f%%{visibility:hidden}100%%{visibility:hidden}}" % (100 / n),
+            ".scan{animation:scan %.2fs linear infinite}"
+            "@keyframes scan{from{transform:translateY(-14px)}to{transform:translateY(%dpx)}}" % (dur, H)]
+
+    def label(row, x, text, level):
+        return '<text x="{}" y="{}" style="font-size:11px;fill:{}">{}</text>'.format(
+            x, row * atlas.ch + a11, tone(level), escape(text))
+
+    def grid(idx, lvl, dx=0):
+        return svg_rows(idx, lvl, fine.glyphs, L["bx0"], L["by0"], fine.cw, fine.ch, a9, level_class, dx=dx)
+
+    lx = left * atlas.cw
+    static = [
+        '<rect width="{}" height="{}" fill="{}"/>'.format(W, H, tone(0)),
+        star_path(lx + 4, 2 * atlas.ch + atlas.ch // 2, 5.5, "#ff2a2a"),
+        label(2, lx + 2 * atlas.cw, "shrenixcodes", .78),
+        label(20, lx, "ai/ml  ·  backend  ·  real-time systems", .74),
+        label(21, lx, "b.tech cse (ai & ml)  ·  srm ist", .52),
+        '<text x="{0}" y="{1}" style="font-size:50px;font-weight:700;letter-spacing:3px">SHREYAN</text>'
+        '<text x="{0}" y="{2}" style="font-size:50px;font-weight:700;letter-spacing:3px">BAG</text>'.format(
+            lx - 2, 4 * atlas.ch + a50, 4 * atlas.ch + 58 + a50),
+    ]
+    frames = []
+    for i, (sidx, slvl, cells, readout, stamp) in enumerate(records):
+        body = [label(L["rows"] - 3, lx, readout, .42), label(L["rows"] - 3, lx + 36 * atlas.cw, stamp, .3)]
+        if cells:  # the glitch band jumps sideways and leaves a faint echo behind
+            ra, rb, shift = cells
+            rest, band = sidx.copy(), np.zeros_like(sidx)
+            rest[ra:rb], band[ra:rb] = 0, sidx[ra:rb]
+            body += [grid(rest, slvl), '<g opacity=".3">' + grid(band, slvl) + "</g>",
+                     grid(band, np.minimum(slvl * 1.15, 1), dx=shift * fine.cw)]
+        else:
+            body.append(grid(sidx, slvl))
+        frames.append('<g class="f s" style="animation-delay:{:.2f}s">{}</g>'.format(i / fps, "".join(body)))
+
+    overlay = ('<defs><pattern id="sl" width="4" height="2" patternUnits="userSpaceOnUse">'
+               '<rect y="1" width="4" height="1" fill="#000" opacity=".22"/></pattern>'
+               '<linearGradient id="band" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+               '<stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>'
+               '</linearGradient></defs>'
+               '<rect class="scan" width="{0}" height="14" fill="url(#band)"/>'
+               '<rect width="{0}" height="{1}" fill="url(#sl)"/>').format(W, H)
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
+           'aria-label="Shreyan Bag: AI/ML, backend and real-time systems. A turning lattice sculpture drawn in ASCII.">\n'
+           '<style>{css}</style>\n{static}\n{frames}\n{overlay}\n</svg>\n').format(
+        W=W, H=H, css="".join(css), static="".join(static), frames="\n".join(frames), overlay=overlay)
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(svg)
 
 
 def main():
@@ -217,15 +309,20 @@ def main():
     ap.add_argument("--seconds", type=float, default=6)
     ap.add_argument("--still", type=int, default=0, help="frame used for the static PNG")
     ap.add_argument("--out", default=os.path.join(ROOT, "assets", "animations", "ascii-hero"))
+    ap.add_argument("--gif", action="store_true", help="also write a GIF (the README uses the SVG)")
     args = ap.parse_args()
 
-    frames, stills, size = build(args)
+    frames, stills, size, records, layout = build(args)
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
-    save_gif(frames, args.out + ".gif", args.fps)
+    write_svg(args.out + ".svg", records, layout, args.fps)
     still = dict(stills).get(args.still, stills[0][1])
     still.save(args.out + ".png", optimize=True)
-    print("wrote", args.out + ".gif", size, len(frames), "frames",
-          "{:.0f} KB".format(os.path.getsize(args.out + ".gif") / 1024))
+    outputs = [".svg", ".png"]
+    if args.gif:
+        save_gif(frames, args.out + ".gif", args.fps)
+        outputs.append(".gif")
+    for ext in outputs:
+        print("wrote", args.out + ext, "{:.0f} KB".format(os.path.getsize(args.out + ext) / 1024))
 
 
 if __name__ == "__main__":
