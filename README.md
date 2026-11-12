@@ -7,7 +7,7 @@ I like understanding how things work underneath, so I also end up writing termin
 <sub>**interests** &nbsp; applied ML & computer vision · LLM systems · backend, async & distributed systems · Android · developer tools · creative frontend</sub>
 
 <!-- recent:start -->
-<sub>lately pushed to &nbsp; [pinn-vs-operators](https://github.com/shrenixcodes/pinn-vs-operators) nov 08 &nbsp;·&nbsp; [neon-rush](https://github.com/shrenixcodes/neon-rush) TypeScript · nov 03 &nbsp;·&nbsp; [prism_multichar](https://github.com/shrenixcodes/prism_multichar) Lua · nov 02</sub>
+<sub>lately pushed to &nbsp; [VECTORA](https://github.com/shrenixcodes/VECTORA) nov 12 &nbsp;·&nbsp; [PingSherpa](https://github.com/shrenixcodes/PingSherpa) Python · nov 11 &nbsp;·&nbsp; [pinn-vs-operators](https://github.com/shrenixcodes/pinn-vs-operators) nov 08</sub>
 <!-- recent:end -->
 
 &nbsp;
