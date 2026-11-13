@@ -9,26 +9,26 @@
 <path d="M8,20 V8 H20" fill="none" stroke="#b8c2dc" stroke-width="1"/><path d="M892,20 V8 H880" fill="none" stroke="#b8c2dc" stroke-width="1"/><path d="M8,250 V262 H20" fill="none" stroke="#b8c2dc" stroke-width="1"/><path d="M892,250 V262 H880" fill="none" stroke="#b8c2dc" stroke-width="1"/>
 <path d="M30.0,28.0 Q30.0,34.0 34.3,34.0 Q30.0,34.0 30.0,40.0 Q30.0,34.0 25.7,34.0 Q30.0,34.0 30.0,28.0Z" fill="#ff2a2a"/>
 <text x="44" y="38" class="m" font-size="12" letter-spacing="3" fill="#b8c2dc">SIGNAL</text>
-<text x="872" y="38" class="m" font-size="12" fill="#8a92a8" text-anchor="end">updated 2026-11-12</text>
+<text x="872" y="38" class="m" font-size="12" fill="#8a92a8" text-anchor="end">updated 2026-11-13</text>
 <line x1="24" y1="56" x2="876" y2="56" stroke="#1d2130"/>
-<g class="in" style="animation-delay:0.10s"><text x="40.0" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">1,121</text><text x="40.0" y="140" class="m" font-size="12.5" fill="#8a92a8">contributions · 12 mo</text></g>
+<g class="in" style="animation-delay:0.10s"><text x="40.0" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">1,132</text><text x="40.0" y="140" class="m" font-size="12.5" fill="#8a92a8">contributions · 12 mo</text></g>
 <line x1="194.4" y1="80" x2="194.4" y2="146" stroke="#1d2130"/>
-<g class="in" style="animation-delay:0.18s"><text x="210.4" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">354</text><text x="210.4" y="140" class="m" font-size="12.5" fill="#8a92a8">commits · 12 mo</text></g>
+<g class="in" style="animation-delay:0.18s"><text x="210.4" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">363</text><text x="210.4" y="140" class="m" font-size="12.5" fill="#8a92a8">commits · 12 mo</text></g>
 <line x1="364.8" y1="80" x2="364.8" y2="146" stroke="#1d2130"/>
-<g class="in" style="animation-delay:0.26s"><text x="380.8" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">11 d</text><text x="380.8" y="140" class="m" font-size="12.5" fill="#8a92a8">current streak</text></g>
+<g class="in" style="animation-delay:0.26s"><text x="380.8" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">12 d</text><text x="380.8" y="140" class="m" font-size="12.5" fill="#8a92a8">current streak</text></g>
 <line x1="535.2" y1="80" x2="535.2" y2="146" stroke="#1d2130"/>
 <g class="in" style="animation-delay:0.34s"><text x="551.2" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">29 d</text><text x="551.2" y="140" class="m" font-size="12.5" fill="#8a92a8">longest streak · 12 mo</text></g>
 <line x1="705.6" y1="80" x2="705.6" y2="146" stroke="#1d2130"/>
 <g class="in" style="animation-delay:0.42s"><text x="721.6" y="118" class="s" font-size="34" font-weight="700" fill="#eef1f8">36</text><text x="721.6" y="140" class="m" font-size="12.5" fill="#8a92a8">public repositories</text></g>
-<text x="40" y="186" class="m" font-size="12.5" fill="#8a92a8">languages · main language of 34 public repos</text>
-<rect class="g" x="40.0" y="198" width="552.7" height="8" fill="#2424d9" style="animation-delay:0.30s"/>
-<rect class="g" x="594.7" y="198" width="142.7" height="8" fill="#6699ff" style="animation-delay:0.38s"/>
-<rect class="g" x="739.4" y="198" width="46.2" height="8" fill="#99ccff" style="animation-delay:0.46s"/>
-<rect class="g" x="787.6" y="198" width="22.1" height="8" fill="#b8c2dc" style="animation-delay:0.54s"/>
-<rect class="g" x="811.8" y="198" width="22.1" height="8" fill="#8a92a8" style="animation-delay:0.62s"/>
-<rect class="g" x="835.9" y="198" width="22.1" height="8" fill="#5c6175" style="animation-delay:0.70s"/>
-<rect x="40.0" y="227" width="9" height="9" fill="#2424d9"/><text x="55.0" y="236" class="m" font-size="12.5" fill="#b8c2dc">Python 68%</text>
-<rect x="155.0" y="227" width="9" height="9" fill="#6699ff"/><text x="170.0" y="236" class="m" font-size="12.5" fill="#b8c2dc">TypeScript 18%</text>
+<text x="40" y="186" class="m" font-size="12.5" fill="#8a92a8">languages · main language of 35 public repos</text>
+<rect class="g" x="40.0" y="198" width="536.9" height="8" fill="#2424d9" style="animation-delay:0.30s"/>
+<rect class="g" x="578.9" y="198" width="162.0" height="8" fill="#6699ff" style="animation-delay:0.38s"/>
+<rect class="g" x="742.9" y="198" width="44.9" height="8" fill="#99ccff" style="animation-delay:0.46s"/>
+<rect class="g" x="789.7" y="198" width="21.4" height="8" fill="#b8c2dc" style="animation-delay:0.54s"/>
+<rect class="g" x="813.1" y="198" width="21.4" height="8" fill="#8a92a8" style="animation-delay:0.62s"/>
+<rect class="g" x="836.6" y="198" width="21.4" height="8" fill="#5c6175" style="animation-delay:0.70s"/>
+<rect x="40.0" y="227" width="9" height="9" fill="#2424d9"/><text x="55.0" y="236" class="m" font-size="12.5" fill="#b8c2dc">Python 66%</text>
+<rect x="155.0" y="227" width="9" height="9" fill="#6699ff"/><text x="170.0" y="236" class="m" font-size="12.5" fill="#b8c2dc">TypeScript 20%</text>
 <rect x="300.4" y="227" width="9" height="9" fill="#99ccff"/><text x="315.4" y="236" class="m" font-size="12.5" fill="#b8c2dc">Java 6%</text>
 <rect x="392.6" y="227" width="9" height="9" fill="#b8c2dc"/><text x="407.6" y="236" class="m" font-size="12.5" fill="#b8c2dc">JavaScript 3%</text>
 <rect x="530.4" y="227" width="9" height="9" fill="#8a92a8"/><text x="545.4" y="236" class="m" font-size="12.5" fill="#b8c2dc">Lua 3%</text>
