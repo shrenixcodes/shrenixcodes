@@ -7,7 +7,7 @@ I like understanding how things work underneath, so I also end up writing termin
 <sub>**interests** &nbsp; applied ML & computer vision · LLM systems · backend, async & distributed systems · Android · developer tools · creative frontend</sub>
 
 <!-- recent:start -->
-<sub>lately pushed to &nbsp; [RustGit](https://github.com/shrenixcodes/RustGit) TypeScript · nov 25 &nbsp;·&nbsp; [sonora](https://github.com/shrenixcodes/sonora) TypeScript · nov 24 &nbsp;·&nbsp; [Lilt](https://github.com/shrenixcodes/Lilt) Rust · nov 18</sub>
+<sub>lately pushed to &nbsp; [sonora](https://github.com/shrenixcodes/sonora) TypeScript · nov 25 &nbsp;·&nbsp; [RustGit](https://github.com/shrenixcodes/RustGit) TypeScript · nov 25 &nbsp;·&nbsp; [Lilt](https://github.com/shrenixcodes/Lilt) Rust · nov 25</sub>
 <!-- recent:end -->
 
 &nbsp;
